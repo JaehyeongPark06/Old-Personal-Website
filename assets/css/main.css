@@ -501,6 +501,14 @@ header .pallete img{
     cursor: pointer;
 }
 
+.projects .description p{
+    font-size: 2rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
 .projects .box-container .box.first{
     max-width: 40rem;
     max-height: 40rem;
