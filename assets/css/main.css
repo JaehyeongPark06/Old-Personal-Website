@@ -822,7 +822,7 @@ header .pallete img{
 
 
 
-@media (min-width: 1921px){
+@media (max-width: 2560px){
 .home{
     padding: 0 7rem;
 }
