@@ -854,7 +854,7 @@ header .pallete img{
     width: 51%;
     height: 100%;
     background: #1a1a1a;
-    z-index: 1000;
+    z-index: 10;
 }
 
 #loader-wrapper .loader-section.section-left{
