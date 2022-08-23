@@ -261,18 +261,20 @@ header .pallete img{
 .home h1{
     font-size: 8rem;
     color:var(--text);
+    margin-bottom: 1.5rem;
     animation: fade-up 0.8s 1.4s both;
 }
 
 .home h1 span{
     color: var(--maincolor);
+    font-size: 9rem;
     animation: fade-up 0.8s 1.4s both;
 }
 
 .home h4{
     font-size: 3rem;
     color: var(--homeh4);
-    animation: fade-up 1s 1.6s both;
+    animation: fade-up 1s 1.65s both;
 }
 
 .home h2{
@@ -855,7 +857,7 @@ header .pallete img{
     height: 150px;
     border: 3px solid transparent;
     border-radius: 50%;
-    border-top-color: var(--maincolor);
+    border-top-color: #fff;
 
     -webkit-animation: spin 2s linear infinite; 
     animation: spin 2s linear infinite; 
@@ -886,7 +888,7 @@ header .pallete img{
     bottom: 15px;
     border: 3px solid transparent;
     border-radius: 50%;
-    border-top-color: var(--maincolor);
+    border-top-color: #fff;
 
     -webkit-animation: spin 4s linear infinite; 
     animation: spin 4s linear infinite; 
