@@ -845,6 +845,7 @@ header .pallete img{
     width: 100%;
     height: 100%;
     z-index: 1000;
+    overflow: hidden;
 }
 
 #loader-wrapper .loader-section{
@@ -867,7 +868,7 @@ header .pallete img{
 #loader{
     display: block;
     position: relative;
-    left: 45%;
+    left: 44%;
     top: 40%;
     width: 150px;
     height: 150px;
