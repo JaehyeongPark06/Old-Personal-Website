@@ -820,8 +820,113 @@ header .pallete img{
 
 
 
+@media (min-width: 1921px){
+.home{
+    padding: 0 7rem;
+}
 
+.home h1{
+    font-size: 10rem;
+}
 
+.home h3{
+    font-size: 9rem;
+}
+
+.home h4{
+    font-size: 4rem;
+}
+
+.home h2{
+    font-size: 3rem;
+}
+
+.home h2 span{
+    font-size: 5rem;
+}
+
+.about .row .counter .infos h3{
+    width: 100%;
+}
+
+.about .row .skill-bars{
+    width: 90%;
+}
+
+.skill-bars .bar .info{
+    margin-bottom: 3rem;
+}
+
+.skill-bars .bar{
+    margin: 4rem 0;
+}    
+
+.experience .box-container .box{
+    width: 100%;
+}
+
+.projects .box-container .box.first{
+    width: 40rem;
+    height: 32rem;
+}
+
+.projects .box-container .box.first img{
+    width: 180px;
+    height: 180px;
+}
+
+.projects .box-container .box.second img{
+    width: 180px;
+    height: 180px;
+}
+
+.projects .box-container .box.third img{
+    width: 180px;
+    height: 180px;
+}
+
+.projects .box-container .box.fourth img{
+    width: 180px;
+    height: 180px;
+}
+
+.projects .box-container .box.fifth img{
+    width: 180px;
+    height: 180px;
+}
+
+.projects .box-container .box.sixth img{
+    width: 180px;
+    height: 180px;
+}
+
+.projects .box-container .box.second{
+    width: 40rem;
+    height: 32rem;
+}
+
+.projects .box-container .box.third{
+    width: 40rem;
+    height: 32rem;
+}
+
+.projects .box-container .box.fourth{
+    width: 40rem;
+    height: 32rem;
+}
+
+.projects .box-container .box.fifth{
+    width: 40rem;
+    height: 32rem;
+}
+
+.projects .box-container .box.sixth{
+    width: 40rem;
+    height: 32rem;
+}
+}
+
+@media (max-width: 1920)
 
 @media (max-width: 1629px){
 .home{
