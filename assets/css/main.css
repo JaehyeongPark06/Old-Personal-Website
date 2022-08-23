@@ -753,8 +753,6 @@ header .pallete img{
 .contact .row .content .title{
     color: var(--maincolor);
     font-size: 3rem;
-    padding-bottom: 1rem;
-    margin-top: 2rem;
     font-weight: 1000;
 }
 
@@ -774,7 +772,6 @@ header .pallete img{
     padding: 1rem 0;
     font-weight: normal;
     width: 100%;
-    padding-bottom: 1rem;
 }
 
 .contact .row .content .info h3 i{
