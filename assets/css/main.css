@@ -76,7 +76,19 @@
     }
 }
 
+@keyframes reverse-spin {
+    0% {
+        -webkit-transform: rotate(0deg);  
+        -ms-transform: rotate(0deg);  
+        transform: rotate(0deg); 
+    }
 
+    100% {
+        -webkit-transform: rotate(-360deg);  
+        -ms-transform: rotate(-360deg);  
+        transform: rotate(-360deg); 
+    }
+}
 
 
 
@@ -860,10 +872,10 @@ header .pallete img{
     height: 150px;
     border: 3px solid transparent;
     border-radius: 50%;
-    border-top-color: #fff;
+    border-top-color: var(--maincolor);
 
-    -webkit-animation: spin 2s linear infinite; 
-    animation: spin 2s linear infinite; 
+    -webkit-animation: spin 1.7s linear infinite; 
+    animation: spin 1.7s linear infinite; 
     z-index: 1001;
 }
 
@@ -876,10 +888,10 @@ header .pallete img{
     bottom: 5px;
     border: 3px solid transparent;
     border-radius: 50%;
-    border-top-color: var(--maincolor);
+    border-top-color: #fff;
 
-    -webkit-animation: spin 3s linear infinite; 
-    animation: spin 3s linear infinite; 
+    -webkit-animation: spin-reverse 1.5s linear infinite; 
+    animation: spin 1.5s linear infinite; 
 }
 
 #loader:after{
@@ -891,10 +903,10 @@ header .pallete img{
     bottom: 15px;
     border: 3px solid transparent;
     border-radius: 50%;
-    border-top-color: #fff;
+    border-top-color: var(--maincolor);
 
-    -webkit-animation: spin 4s linear infinite; 
-    animation: spin 4s linear infinite; 
+    -webkit-animation: spin 1s linear infinite; 
+    animation: spin 1s linear infinite; 
 }
 
 .loaded #loader-wrapper .loader-section.section-left{
