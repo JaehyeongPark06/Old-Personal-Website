@@ -34,27 +34,6 @@ icon.onclick = function(){
   }
 }
 
-// animate scroll
-window.addEventListener('scroll', reveal);
-
-function reveal(){
-  var reveals = document.querySelectorAll('.reveal'); 
-
-  for (var i = 0; i < reveals.length; i++){
-
-    var windowheight = window.innerHeight;
-    var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 30;
-
-    if (revealtop < windowheight - revealpoint){
-      reveals[i].classList.add('active');
-    }
-    else{
-      return
-    }
-}
-}
-
 // smooth scroll
 $('a[href*="#"]').on('click',function(e){
 
