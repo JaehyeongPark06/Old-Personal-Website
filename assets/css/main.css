@@ -646,10 +646,10 @@ header .pallete img{
     padding-top: 1.5rem;
 }
 
-.experience .box-container .box p{
+.experience .box-container .box ul li{
     font-size: 1.4rem;
     color: var(--text2);
-    padding: 1rem 0;
+    padding: 0.3rem 0;
 }
 
 .experience .box-container .box i{
