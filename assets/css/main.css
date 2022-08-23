@@ -873,33 +873,33 @@ header .pallete img{
 }
 
 .projects .box-container .box.first img{
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
 }
 
 .projects .box-container .box.second img{
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
 }
 
 .projects .box-container .box.third img{
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
 }
 
 .projects .box-container .box.fourth img{
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
 }
 
 .projects .box-container .box.fifth img{
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
 }
 
 .projects .box-container .box.sixth img{
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
 }
 
 .projects .box-container .box.second{
@@ -958,7 +958,7 @@ header .pallete img{
 }
 
 .skill-bars .bar .info{
-    margin-bottom: 3rem;
+    margin-bottom: 20px;
 }
 
 .skill-bars .bar{
