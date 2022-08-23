@@ -1,0 +1,1179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+/* 
+#f9c80e - dark yellow background
+#2ED3B5 - green background
+*/
+
+.light-theme{
+    --maincolor:#f9c80e;
+    --background: rgb(245, 245, 245);
+    --text: #111;
+    --bars: #fff;
+    --selection: #eee;
+    --background2: #e4e4e4;
+    --box: rgb(255, 255, 255);
+    --homeh4: #cdcdcd;
+    --experience: #e4e4e4;
+    --text2: rgb(30, 30, 30);
+}
+
+:root{
+    --maincolor:#f9c80e;
+    --background: #111;
+    --text: #fff;
+    --bars: #fff;
+    --selection: #333;
+    --background2: #1a1a1a;
+    --box: #3333;
+    --homeh4: #494949;
+    --experience: #222;
+    --text2: #eee;
+}
+
+@keyframes hover-up {
+    0% {transform: translateY(-8px);}
+    50% {transform: translateY(0);}
+    100% {transform: translateY(-8px);}
+}
+
+@keyframes fade-up {
+    0% {opacity: 0;}
+    20% {opacity: 0; transform: translateY(30px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes blinker {
+    50% {opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS */
+
+.reveal{
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active{
+    animation-name: fade-up;
+    animation-duration: 0.6s;
+    opacity: 1;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    border: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--maincolor);
+    color: var(--selection);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--background);
+    overflow-x: hidden;
+    padding-left: 25rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    background: var(--selection);
+    color: var(--text);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    border: 3px solid var(--maincolor);
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 
+                100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.btn i{
+    padding: 0 0.5;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background: var(--maincolor);
+    transform: scale(1.05);
+    border: 3px solid var(--text);
+}
+
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid rgba(180, 180, 180, 0.267);
+    color: var(--text);
+}
+
+.heading span{
+    color: var(--maincolor);
+}
+
+header{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 25rem;
+    background: var(--background2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 0.3rem;
+    margin: 1rem 0;
+    color: var(--text);
+    font-size: 2.5rem;
+    transition: 0.3s;
+}
+
+header .navbar ul li a:hover{
+    color: var(--maincolor);
+}
+
+header .social a{ 
+    padding: 0.2rem 0;
+    font-size: 2.3rem;
+    color: var(--text);
+    margin: 0 0.7rem;
+    cursor: pointer;
+}
+
+header .social a:hover{
+    color: var(--maincolor);
+}
+
+#icon{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+#icon:hover{
+    transform: scale(1.2);
+}
+
+header .pallete img{
+    opacity: 0;
+    height: 5rem;
+    width: 2rem;
+    margin: 0 0.7rem;
+    cursor: pointer;
+}
+
+#menu{
+    position: fixed;
+    top: 2rem; 
+    right: 2rem;
+    background: var(--selection);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+#menu:hover{
+    transform: scale(1.2);
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 7rem;
+}
+
+.home h3{
+    font-size: 8rem;
+    color: var(--text);
+    animation-name: fade-up;
+    animation-duration: 0.8s;
+}
+
+.home h1{
+    font-size: 8rem;
+    color:var(--text);
+    animation: fade-up 0.8s 0.4s both;
+}
+
+.home h1 span{
+    color: var(--maincolor);
+    animation: fade-up 0.8s 0.4s both;
+}
+
+.home h4{
+    font-size: 3rem;
+    color: var(--homeh4);
+    animation: fade-up 1s 0.73s both;
+}
+
+.home h2{
+    font-size: 2.5rem;
+    color: var(--text);
+    padding: 4rem 0;
+    opacity: 90%;   
+    animation-name: hover-up;
+    animation-duration: 2.35s;
+    animation-iteration-count: infinite;
+}
+
+.home h2 span{
+    font-size: 5rem;
+    color: var(--text);
+    padding: 0 0;
+    opacity: 90%;
+    vertical-align: middle;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
+    padding: 1rem 0;
+}
+
+.about .row .infos{
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .infos h3{
+    font-size: 2rem;
+    color: var(--text);
+    padding: 1rem 0;
+    font-weight: normal;
+    max-width: 98%;
+}
+
+.about .row .infos h3 span{
+    font-size: 2rem;
+    color: var(--maincolor);
+    font-weight: normal;
+    width: 0;
+
+}
+
+.about .row .infos h3 span:hover::after{
+    opacity: 100%;
+}
+
+#blinker{
+    font-size: 2rem;
+    color: var(--maincolor);
+    animation: blinker 1s linear infinite;
+}
+
+.about .row .counter{
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .explain{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    color: var(--maincolor);
+}
+
+.skill-bars{
+    padding: 25px 30px;
+    width: 1000px;
+    background: var(--background2);
+    border-radius: 10px;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 
+                100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.skill-bars .bar{
+    margin: 20px 0;
+}
+
+.skill-bars .bar:first-child{
+    margin-top: 0;
+}
+
+.skill-bars .bar .info{
+    margin-bottom: 20px;
+}
+
+.skill-bars .bar .info span{
+    font-weight: 1000;
+    font-size: 18px;
+    color: var(--text);
+    padding: 0;
+}
+
+.skill-bars .bar .info span i{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--maincolor);
+    padding: 0;
+}
+
+.skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: var(--bars);
+    position: relative;
+    border-radius: 10px;
+}
+
+.bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: var(--maincolor);
+}
+
+.bar .progress-line.html span{
+    width: 90%;
+}
+
+.bar .progress-line.css span{
+    width: 85%;
+}
+
+.bar .progress-line.cpp span{
+    width: 45%;
+}
+
+.bar .progress-line.python span{
+    width: 70%;
+}
+
+.bar .progress-line.javascript span{
+    width: 60%;
+}
+
+.progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -20px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: var(--text);
+}
+
+.progress-line span::after{
+    position: absolute;
+    top: -36px;
+    right: 0;
+    font-weight: 1000;
+    background: var(--text);
+    color: var(--background);
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.progress-line.html span::after{
+    content: "90%";
+}
+
+.progress-line.css span::after{
+    content: "85%";
+}
+
+.progress-line.cpp span::after{
+    content: "45%";
+}
+
+.progress-line.python span::after{
+    content: "70%";
+}
+
+.progress-line.javascript span::after{
+    content: "60%";
+}
+
+.projects .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.projects .box-container .box{
+    height: 26rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects .box-container .box.first{
+    max-width: 40rem;
+    max-height: 40rem;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;;
+    background-image: url(../../images/projects/pytetris.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projects .box-container .box.first img{
+    width: 160px;
+    height: 160px;
+}
+
+.projects .box-container .box.second{
+    max-width: 40rem;
+    max-height: 40rem;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    background-image: url(../../images/projects/traffic.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projects .box-container .box.second img{
+    width: 160px;
+    height: 160px;
+}
+
+.projects .box-container .box.third{
+    max-width: 40rem;
+    max-height: 40rem;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    background-image: url(../../images/projects/discord_bot1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projects .box-container .box.third img{
+    width: 160px;
+    height: 160px;
+}
+
+.projects .box-container .box.fourth{
+    max-width: 40rem;
+    max-height: 40rem;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    background-image: url(../../images/projects/discord_bot2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projects .box-container .box.fourth img{
+    width: 160px;
+    height: 160px;
+}
+
+.projects .box-container .box.fifth{
+    max-width: 40rem;
+    max-height: 40rem;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    background-image: url(../../images/projects/cursor.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projects .box-container .box.fifth img{
+    width: 160px;
+    height: 160px;
+}
+
+.projects .box-container .box.sixth{
+    max-width: 40rem;
+    max-height: 40rem;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    background-image: url(../../images/projects/ics_201.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projects .box-container .box.sixth img{
+    width: 160px;
+    height: 160px;
+}
+
+.projects .box-container .box a{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.25s;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.projects .box-container .box.first:hover{
+    opacity: 1;
+}
+
+.projects .box-container .box.second:hover{
+    opacity: 1;
+}
+
+.projects .box-container .box.third:hover{
+    opacity: 1;
+}
+
+.projects .box-container .box.fourth:hover{
+    opacity: 1;
+}
+
+.projects .box-container .box.fifth:hover{
+    opacity: 1;
+}
+
+.projects .box-container .box.sixth:hover{
+    opacity: 1;
+}
+
+.projects .box-container .box:hover a {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.experience .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    width: 98%;
+}
+
+.experience .box-container .box{
+    width: 100%;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid var(--text);
+    position: relative;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 
+                100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.experience .box-container .box span{
+    font-size: 1.3rem;
+    background: var(--experience);
+    color: var(--text);
+    border-radius: 5rem;
+    padding: 0.5rem 2.5rem;
+}
+
+.experience .box-container .box h3{
+    font-size: 2rem;
+    color: var(--text);
+    padding-top: 1.5rem;
+}
+
+.experience .box-container .box p{
+    font-size: 1.4rem;
+    color: var(--text2);
+    padding: 1rem 0;
+}
+
+.experience .box-container .box i{
+    position: absolute;
+    top: -1.5rem; 
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--bars);
+    background: var(--maincolor);
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 7rem;
+    padding-bottom: 1rem;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: var(--box);
+    color: var(--text);
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 96%;
+    transition: border-bottom-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 
+                100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.box:focus{
+    border-bottom-color: var(--maincolor);
+}
+
+.contact .row form .message{
+    height: 28rem;
+    resize: vertical;
+}
+
+.contact .row .content .title{
+    color: var(--maincolor);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 1000;
+}
+
+.contact .row .content .info .title{
+    color: var(--maincolor);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 1000;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--text2);
+    padding: 1rem 0;
+    font-weight: normal;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color: var(--maincolor);
+}
+
+.contact .row .content .info a{
+    padding: 0.7rem 2.1rem;
+    background: var(--selection);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1.8rem;
+    border-radius: 5rem;
+    border: 3px solid var(--maincolor);
+    width: 37%;
+    text-align: center;
+}
+
+.contact .row .content .info a i{
+    padding: 2rem 0.5rem;
+    font-size: 1.8rem;
+}
+
+.contact .row .content .info a:hover{
+    background: var(--maincolor);
+    transform: scale(1.05);
+    border: 3px solid var(--text);
+}
+
+.footer{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    color: var(--text);
+    background: var(--background);
+}
+
+.footer span{
+    color: var(--maincolor);
+}
+
+.footer i{
+    color: var(--maincolor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1629px){
+.home{
+    padding: 1rem 8rem;
+}
+}
+
+@media (max-width: 1200px){
+html{
+    font-size: 55%;
+}
+
+.projects .box-container .box.first img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.second img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.third img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.fourth img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.fifth img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.sixth img{
+    width: 170px;
+    height: 170px;
+}
+
+.home{
+    padding: 1rem 8rem;
+}
+
+.skill-bars{
+    width: 90%;
+}
+}
+
+@media (max-width: 991px){
+header{
+    left: -120%;
+    width: 30vw;
+}
+
+#menu{
+    display: block;
+}
+
+header.toggle{
+    left: 0%;
+}
+
+body{
+    padding: 0;
+}
+
+.home{
+    padding: 13rem;
+}   
+
+.projects .box-container .box.first img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.second img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.third img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.fourth img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.fifth img{
+    width: 170px;
+    height: 170px;
+}
+
+.projects .box-container .box.sixth img{
+    width: 170px;
+    height: 170px;
+}
+
+#menu{
+    font-size: 3rem;
+}
+}
+
+@media (max-width: 768px){
+header{
+    width: 100vw;
+}
+
+header .navbar ul li a{
+    font-size: 3.5rem;
+}
+
+header .social a{
+    font-size: 3rem;
+}
+
+#icon{
+    height: 35px;
+    width: 35px;
+}
+
+.projects .box-container .box.first img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.second img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.third img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.fourth img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.fifth img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.sixth img{
+    width: 150px;
+    height: 150px;
+}
+
+html{
+    font-size: 50%;
+}
+
+.about .row .infos{
+    padding-right: 6rem;
+}
+
+.experience .box-container .box{
+    width: 100%;
+}
+
+.about .skill-bars{
+    width: 85%;
+}
+
+.about .skill-bars{
+    margin-top: 3rem;
+}
+}
+
+@media (max-width: 641px){
+header{
+    width: 100vw;
+}
+
+.home h3{
+    width: 130%;
+}
+
+.skill-bars .bar .info{
+    margin-bottom: 42px;
+}
+
+#menu{
+    font-size: 3rem;
+}
+
+.heading{
+    margin: 0 3rem;
+}
+
+.experience .box-container .box{
+    width: 100%;
+}
+
+.contact .row form{
+    margin: 3rem 0;
+}
+
+header .social a{ 
+    font-size: 3rem;
+}  
+
+header .navbar ul li a{
+    font-size: 3rem;
+}
+}
+
+@media (max-width: 600px){
+header{
+    width: 100vw;
+}
+
+.home h3{
+    width: 130%;
+}
+
+.skill-bars .bar .info{
+    margin-bottom: 42px;
+}
+
+.heading{
+    margin: 0 3rem;
+}
+
+.experience .box-container .box{
+    width: 100%;
+}
+
+.projects .box-container .box.first img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.second img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.third img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.fourth img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.fifth img{
+    width: 150px;
+    height: 150px;
+}
+
+.projects .box-container .box.sixth img{
+    width: 150px;
+    height: 150px;
+}
+
+.contact .row form{
+    margin: 3rem 0;
+}
+
+header .social a{ 
+    font-size: 3rem;
+}  
+
+header .navbar ul li a{
+    font-size: 3rem;
+}
+
+.home{
+    padding: 0 5rem;
+}
+}
+
+@media (max-width: 480px){
+header{
+    width: 100vw;
+}
+
+}
+
+@media (max-width: 440px){
+header{
+    width: 100vw;
+}
+
+.home h3{
+    width: 130%;
+}
+
+.home h2{
+    font-size: 2rem;
+}
+
+.home{
+    padding: 0rem 5rem;
+}
+
+#menu{
+    font-size: 2.8rem;
+}
+
+.skill-bars .bar .info{
+    margin-bottom: 42px;
+}
+
+.heading{
+    margin: 0 3rem;
+}
+
+.experience .box-container .box{
+    width: 100%;
+}
+
+.contact .row form{
+    margin: 3rem 0;
+}
+
+header .navbar ul li a{
+    font-size: 2.7rem;
+}
+
+header .social a{ 
+    font-size: 3rem;
+}    
+
+#icon{
+    width: 30px;
+    height: 30px;
+}
+}
+
+@media (max-width: 360px){
+.home{
+    padding: 0 5.2rem;
+}
+
+header .social a{ 
+    font-size: 2.5rem;
+}    
+
+#icon{
+    width: 30px;
+    height: 30px;
+}
+}
