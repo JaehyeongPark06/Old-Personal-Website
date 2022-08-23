@@ -926,8 +926,6 @@ header .pallete img{
 }
 }
 
-@media (max-width: 1920)
-
 @media (max-width: 1629px){
 .home{
     padding: 1rem 8rem;
