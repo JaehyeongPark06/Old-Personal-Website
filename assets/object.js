@@ -1,8 +1,8 @@
-// cool object animate
+// cool object animation
 var canvas = document.getElementById('logo-canvas'),
 	ctx = canvas.getContext('2d'),
 	splash = document.getElementById('splash'),
-	color = "#8739FA",
+    color = "#8739FA",
 	lasttime, 
 	freeze
 
