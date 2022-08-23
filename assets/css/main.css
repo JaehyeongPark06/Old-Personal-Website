@@ -867,11 +867,6 @@ header .pallete img{
     width: 100%;
 }
 
-.projects .box-container .box.first{
-    width: 40rem;
-    height: 32rem;
-}
-
 .projects .box-container .box.first img{
     width: 230px;
     height: 230px;
@@ -900,6 +895,11 @@ header .pallete img{
 .projects .box-container .box.sixth img{
     width: 230px;
     height: 230px;
+}
+
+.projects .box-container .box.first{
+    width: 40rem;
+    height: 32rem;
 }
 
 .projects .box-container .box.second{
@@ -969,11 +969,6 @@ header .pallete img{
     width: 100%;
 }
 
-.projects .box-container .box.first{
-    width: 40rem;
-    height: 32rem;
-}
-
 .projects .box-container .box.first img{
     width: 180px;
     height: 180px;
@@ -1004,29 +999,34 @@ header .pallete img{
     height: 180px;
 }
 
+.projects .box-container .box.first{
+    width: 35rem;
+    height: 25rem;
+}
+
 .projects .box-container .box.second{
-    width: 40rem;
-    height: 32rem;
+    width: 35rem;
+    height: 25rem;
 }
 
 .projects .box-container .box.third{
-    width: 40rem;
-    height: 32rem;
+    width: 35rem;
+    height: 25rem;
 }
 
 .projects .box-container .box.fourth{
-    width: 40rem;
-    height: 32rem;
+    width: 35rem;
+    height: 25rem;
 }
 
 .projects .box-container .box.fifth{
-    width: 40rem;
-    height: 32rem;
+    width: 35rem;
+    height: 25rem;
 }
 
 .projects .box-container .box.sixth{
-    width: 40rem;
-    height: 32rem;
+    width: 35rem;
+    height: 25rem;
 }
 }
 
