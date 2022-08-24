@@ -216,7 +216,7 @@ header .navbar ul li a{
     padding: 0.3rem;
     margin: 1rem 0;
     color: var(--text);
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     transition: 0.3s;
 }
 
@@ -225,7 +225,7 @@ header .navbar ul li a:hover{
 }
 
 header .social a{ 
-    padding: 0.2rem 0;
+    padding: 0.5rem 0;
     font-size: 2.3rem;
     color: var(--text);
     margin: 0 0.7rem;
@@ -240,7 +240,7 @@ header .social a:hover{
     width: 35px;
     height: 35px;
     cursor: pointer;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 #icon:hover{
