@@ -862,8 +862,8 @@ header .pallete img{
 #loader{
     display: block;
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 44.791vw;
     width: 150px;
     height: 150px;
     border: 3px solid transparent;
