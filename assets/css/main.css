@@ -861,7 +861,7 @@ header .pallete img{
     top: 0;
     width: 51%;
     height: 100%;
-    background: #1a1a1a;
+    background: var(--background);
     z-index: 10;
 }
 
