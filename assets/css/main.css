@@ -433,7 +433,7 @@ header .pallete img{
 }
 
 .bar .progress-line.javascript span{
-    width: 60%;
+    width: 75%;
 }
 
 .progress-line span::before{
@@ -478,7 +478,7 @@ header .pallete img{
 }
 
 .progress-line.javascript span::after{
-    content: "60%";
+    content: "75%";
 }
 
 .projects .box-container{
