@@ -846,6 +846,18 @@ header .pallete img{
     animation: spin 0.5s linear infinite; 
 }
 
+#loader::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width : 75px;
+    height: 75px;
+    border-radius: 50%;
+    border-bottom: 4px solid var(--maincolor);
+    border-left: 4px solid transparent;
+}
+
 .loaded #loader-wrapper .loader-section.section-left{
     -webkit-transform: translateX(-100%);  
     -ms-transform: translateX(-100%);  
