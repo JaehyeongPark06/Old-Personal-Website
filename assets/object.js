@@ -19,7 +19,7 @@ function fixdim() {
 	var rect = splash.getBoundingClientRect()
 
 	if(!freeze){
-		var displayheight = displaywidth * 4.5/15 //dimensions.width
+		var displayheight = displaywidth * 4.8	/15 //dimensions.width
 		canvas.width = displayheight * window.devicePixelRatio
 		canvas.style.width = displayheight + 'px'
 		canvas.height = displayheight * window.devicePixelRatio
