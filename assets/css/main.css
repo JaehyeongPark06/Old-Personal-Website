@@ -249,14 +249,14 @@ header .pallete img{
 .home h3{
     font-size: 8rem;
     color: var(--text);
-    animation: fade-up 0.5s 0.45s both;
+    animation: fade-up 0.5s 0.75s both;
 }
 
 .home h1{
     font-size: 8rem;
     color:var(--text);
     margin-bottom: 1.5rem;
-    animation: fade-up 0.5s 0.58s both;
+    animation: fade-up 0.5s 0.82s both;
 }
 
 .home h1 span{
@@ -267,7 +267,7 @@ header .pallete img{
 .home h4{
     font-size: 3rem;
     color: var(--homeh4);
-    animation: fade-up 0.5s 0.76s both;
+    animation: fade-up 0.5s 0.9s both;
 }
 
 .home h2{
@@ -811,7 +811,6 @@ header .pallete img{
     height: 100%;
     z-index: 1000;
     overflow: hidden;
-    background: var(--background2);
 }
 
 #loader-wrapper .loader-section{
@@ -823,6 +822,14 @@ header .pallete img{
     z-index: 10;
 }
 
+#loader-wrapper .loader-section.section-left{
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right{
+    right: 0;
+}
+
 #loader{
     width : 75px;
     height: 75px;
@@ -831,33 +838,49 @@ header .pallete img{
     position: relative;
     top: 45%;
     left: calc(50% - 37.5px);
-    border-top: 4px solid #fff;
+    border-top: 4px solid var(--text);
     border-right: 4px solid transparent;
     z-index: 1001;
 
-    -webkit-animation: spin 0.575s linear infinite; 
-    animation: spin 0.575s linear infinite; 
+    -webkit-animation: spin 0.5s linear infinite; 
+    animation: spin 0.5s linear infinite; 
+}
+
+.loaded #loader-wrapper .loader-section.section-left{
+    -webkit-transform: translateX(-100%);  
+    -ms-transform: translateX(-100%);  
+    transform: translateX(-100%); 
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right{
+    -webkit-transform: translateX(100%);  
+    -ms-transform: translateX(100%);  
+    transform: translateX(100%); 
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
 }
 
 .loaded #loader{
     opacity: 0;
 
-    -webkit-transition: all 0.4s ease-out; 
-    transition: all 0.4s ease-out;
+    -webkit-transition: all 0.3s ease-out; 
+    transition: all 0.3s ease-out;
 }
 
 .loaded #loader-wrapper{
-    opacity: 0;
+    visibility: hidden;
 
-    -webkit-transition: all 0.45s both; 
-    transition: all 0.45s both;  
-}   
+    -webkit-transform: translateY(-100%);  
+    -ms-transform: translateY(-100%);  
+    transform: translateY(-100%); 
 
-
-
-
-
-
+    -webkit-transition: all 0.3s 2s ease-out; 
+    transition: all 0.3s 2s ease-out;
+}
 
 
 
