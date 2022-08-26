@@ -284,7 +284,7 @@ header .pallete img{
     font-size: 8rem;
     color:var(--text);
     margin-bottom: 1.5rem;
-    animation: fade-up 0.8s 0.84s both;
+    animation: fade-up 0.8s 0.82s both;
 }
 
 .home h1 span{
@@ -295,7 +295,7 @@ header .pallete img{
 .home h4{
     font-size: 3rem;
     color: var(--homeh4);
-    animation: fade-up 0.9s 0.88s both;
+    animation: fade-up 0.85s 0.84s both;
 }
 
 .home h2{
@@ -309,8 +309,6 @@ header .pallete img{
 
 .home h2 span{
     font-size: 5rem;
-    padding: 0 0;
-    color: var(--text2);
     vertical-align: middle;
 }
 
@@ -861,49 +859,20 @@ header .pallete img{
 }
 
 #loader{
+    width : 150px;
+    height: 150px;
+    border-radius: 50%;
     display: block;
     position: relative;
     top: 40%;
     left: 44.791vw;
-    width: 150px;
-    height: 150px;
-    border: 3px solid transparent;
-    border-radius: 50%;
-    border-top-color: var(--maincolor);
-
-    -webkit-animation: spin 1.7s linear infinite; 
-    animation: spin 1.7s linear infinite; 
+    border-top: 5px solid var(--maincolor);
+    border-right: 5px solid transparent;
+    animation: spin 1s linear infinite;
     z-index: 1001;
-}
 
-#loader:before{
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border: 3px solid transparent;
-    border-radius: 50%;
-    border-top-color: var(--text);
-
-    -webkit-animation: reverse-spin 0.7s linear infinite; 
-    animation: reverse-spin 0.7s linear infinite; 
-}
-
-#loader:after{
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border: 3px solid transparent;
-    border-radius: 50%;
-    border-top-color: var(--maincolor);
-
-    -webkit-animation: spin 1.3s linear infinite; 
-    animation: spin 1.3s linear infinite; 
+    -webkit-animation: spin 0.5s linear infinite; 
+    animation: spin 0.5s linear infinite; 
 }
 
 .loaded #loader-wrapper .loader-section.section-left{
