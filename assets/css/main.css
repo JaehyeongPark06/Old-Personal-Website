@@ -340,7 +340,6 @@ header .pallete img{
     color: var(--maincolor);
     font-weight: normal;
     width: 0;
-
 }
 
 .about .row .infos h3 span:hover::after{
