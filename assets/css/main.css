@@ -9,25 +9,25 @@
 */
 
 .light-theme{
-    --maincolor:#8739FA;
-    --background: rgb(245, 245, 245);
+    --maincolor: #682BE9;
+    --background: #f5f5f5;
     --text: #111;
     --bars: #fff;
     --selection: #eee;
-    --background2: #e4e4e4;
-    --box: rgb(255, 255, 255);
+    --background2: #f5f5f5;
+    --box: #ffffff;
     --homeh4: #cdcdcd;
-    --experience: #e4e4e4;
+    --experience: hsl(0, 0%, 89%);
     --text2: rgb(30, 30, 30);
 }
 
 :root{
-    --maincolor:#8739FA;
-    --background: #111;
+    --maincolor:#682BE9;
+    --background: #0E1212;
     --text: #fff;
     --bars: #fff;
     --selection: #333;
-    --background2: #1a1a1a;
+    --background2: #0E1212;
     --box: #3333;
     --homeh4: #777779;
     --experience: #222;
@@ -178,6 +178,7 @@ header{
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    border-right: 1px solid var(--text);
 }
 
 header .navbar ul{
