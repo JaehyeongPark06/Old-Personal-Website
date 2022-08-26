@@ -303,7 +303,7 @@ header .pallete img{
     font-size: 2.5rem;
     color: var(--text);
     padding: 4rem 0;
-    opacity: 40%;   
+    opacity: 70%;   
     animation-name: hover-up;
     animation-duration: 2.35s;
     animation-iteration-count: infinite;
