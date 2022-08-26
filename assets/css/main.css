@@ -27,7 +27,7 @@
     --selection: #333;
     --background2: #1a1a1a;
     --box: #3333;
-    --homeh4: #494949;
+    --homeh4: #777779;
     --experience: #222;
     --text2: #eee;
 }
@@ -301,9 +301,8 @@ header .pallete img{
 
 .home h2{
     font-size: 2.5rem;
-    color: var(--text);
-    padding: 4rem 0;
-    opacity: 70%;   
+    color: var(--text2);
+    padding: 4rem 0;  
     animation-name: hover-up;
     animation-duration: 2.35s;
     animation-iteration-count: infinite;
@@ -311,7 +310,6 @@ header .pallete img{
 
 .home h2 span{
     font-size: 5rem;
-    color: var(--text);
     padding: 0 0;
     vertical-align: middle;
 }
