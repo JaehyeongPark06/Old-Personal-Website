@@ -311,6 +311,7 @@ header .pallete img{
 .home h2 span{
     font-size: 5rem;
     padding: 0 0;
+    color: var(--text2);
     vertical-align: middle;
 }
 
