@@ -114,8 +114,8 @@ html{
 }
 
 body{
-    background: var(--background);
     overflow-x: hidden;
+    background: var(--background);
     padding-left: 25rem;
 }
 
