@@ -353,7 +353,8 @@ header .pallete img{
     font-size: 1.2rem;
     margin-top: 1.5rem;
     align-items: center;
-    color: var(--maincolor);
+    color: var(--text);
+    opacity: 60%;
 }
 
 .skill-bars{
