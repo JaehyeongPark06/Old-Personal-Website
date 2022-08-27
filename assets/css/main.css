@@ -1426,14 +1426,27 @@ header{
 
 .home h3{
     width: 130%;
+    font-size: 6.8rem;  
 }
 
 .home h2{
     font-size: 2rem;
 }
 
+.home h1 span{
+    font-size: 7.6rem;
+}
+
 .home{
     padding: 0rem 5rem;
+}
+
+.home h2{
+    font-size: 3rem;
+}
+
+.home h2 span{
+    font-size: 5rem;
 }
 
 #menu{
@@ -1473,6 +1486,30 @@ header .social a{
 @media (max-width: 360px){
 .home{
     padding: 0 5.2rem;
+}
+
+.home h3{
+    font-size: 5rem;
+}
+
+.home h1{
+    font-size: 5rem;
+}
+
+.home h1 span{
+    font-size: 6.2rem;
+}
+
+.home h4{
+    font-size: 2.5rem;
+}
+
+.home h2{
+    font-size: 2.5rem;
+}
+
+.home h2 span{
+    font-size: 4rem;
 }
 
 header .social a{ 
