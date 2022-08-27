@@ -668,7 +668,12 @@ header .pallete img{
 .experience .box-container .box h3{
     font-size: 2rem;
     color: var(--text);
-    padding-top: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.3rem; 
+}
+
+.experience .box-container .box h3 a{
+    color: var(--maincolor)
 }
 
 .experience .box-container .box ul li{
@@ -1244,9 +1249,6 @@ header .social a{
     font-size: 3rem;
 }
 
-#loader{
-    left: 43%;
-}
 #icon{
     height: 35px;
     width: 35px;
@@ -1437,10 +1439,6 @@ header{
     font-size: 2.8rem;
 }
 
-#loader{
-    left: 33%;
-}
-
 .skill-bars .bar .info{
     margin-bottom: 42px;
 }
@@ -1471,19 +1469,9 @@ header .social a{
 }
 }
 
-@media (max-width: 375px){
-    #loader{
-        left: 31%;
-    }
-}
-
 @media (max-width: 360px){
 .home{
     padding: 0 5.2rem;
-}
-
-#loader{
-    left: 27%;  
 }
 
 header .social a{ 
