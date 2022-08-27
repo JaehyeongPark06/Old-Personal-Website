@@ -194,7 +194,7 @@ header{
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    border-right: 1px solid var(--text);
+    border-right: 2px solid var(--text);
 }
 
 header .navbar ul{
