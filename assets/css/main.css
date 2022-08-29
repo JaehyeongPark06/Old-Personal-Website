@@ -8,7 +8,7 @@
 #0E1212 - darker background
 */
 
-.light-theme{
+.light-theme {
     --maincolor: #682BE9;
     --background: #f5f5f5;
     --text: #111;
@@ -21,8 +21,8 @@
     --text2: rgb(30, 30, 30);
 }
 
-:root{
-    --maincolor:#682BE9;
+:root {
+    --maincolor: #682BE9;
     --background: #0E1212;
     --text: #fff;
     --bars: #fff;
@@ -35,64 +35,86 @@
 }
 
 @keyframes hover-up {
-    0% {transform: translateY(-8px);}
-    50% {transform: translateY(0);}
-    100% {transform: translateY(-8px);}
+    0% {
+        transform: translateY(-8px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
 }
 
 @keyframes fade-up {
-    0% {opacity: 0;}
-    20% {opacity: 0; transform: translateY(30px);}
-    100% {opacity: 1; transform: translateY(0);}
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes blinker {
-    50% {opacity: 0;}
+    50% {
+        opacity: 0;
+    }
 }
 
 @-webkit-keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg);  
-        -ms-transform: rotate(0deg);  
-        transform: rotate(0deg); 
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 
     100% {
-        -webkit-transform: rotate(360deg);  
-        -ms-transform: rotate(360deg);  
-        transform: rotate(360deg); 
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
 
 @keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg);  
-        -ms-transform: rotate(0deg);  
-        transform: rotate(0deg); 
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 
     100% {
-        -webkit-transform: rotate(360deg);  
-        -ms-transform: rotate(360deg);  
-        transform: rotate(360deg); 
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
 @-webkit-keyframes opacity-change {
-    0%   { 
-        opacity: 1.0; 
+    0% {
+        opacity: 1.0;
     }
-    100% { 
-        opacity: 0; 
+
+    100% {
+        opacity: 0;
     }
 }
 
 @keyframes opacity-change {
-    0%   { 
-        opacity: 1.0; 
+    0% {
+        opacity: 1.0;
     }
-    100% { 
-        opacity: 0; 
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -108,39 +130,39 @@
 
 
 /* CSS */
-*{
+* {
     font-family: 'Nunito', sans-serif;
-    margin: 0; 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none; 
+    outline: none;
     border: none;
     transition: all .2s linear;
 }
 
-*::selection{
+*::selection {
     background: var(--maincolor);
     color: var(--selection);
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
-body{
+body {
     overflow-x: hidden;
     background: var(--background);
     padding-left: 25rem;
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 1rem;
 }
 
-.btn{
+.btn {
     padding: .7rem 3rem;
     background: var(--selection);
     color: var(--text);
@@ -150,25 +172,25 @@ section{
     border-radius: 5rem;
     border: 3px solid var(--maincolor);
     box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 
-                100px 100px 80px rgba(0, 0, 0, 0.07);
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-.btn i{
+.btn i {
     padding: 0 0.5;
     font-size: 1.8rem;
 }
 
-.btn:hover{
+.btn:hover {
     background: var(--maincolor);
     transform: scale(1.05);
     border: 3px solid var(--text);
 }
 
-.heading{
+.heading {
     text-align: center;
     margin: 0 6rem;
     font-size: 4rem;
@@ -177,13 +199,13 @@ section{
     color: var(--text);
 }
 
-.heading span{
+.heading span {
     color: var(--maincolor);
 }
 
-header{
+header {
     position: fixed;
-    top: 0; 
+    top: 0;
     left: 0;
     z-index: 100;
     height: 100%;
@@ -196,12 +218,12 @@ header{
     text-align: center;
 }
 
-header .navbar ul{
+header .navbar ul {
     list-style: none;
     padding: 1rem 3rem;
 }
 
-header .navbar ul li a{
+header .navbar ul li a {
     display: block;
     padding: 0.3rem;
     margin: 1rem 0;
@@ -209,11 +231,11 @@ header .navbar ul li a{
     font-size: 2.6rem;
 }
 
-header .navbar ul li a:hover{
+header .navbar ul li a:hover {
     color: var(--maincolor);
 }
 
-header .social a{ 
+header .social a {
     padding: 0.5rem 0;
     font-size: 2.3rem;
     color: var(--text);
@@ -221,22 +243,22 @@ header .social a{
     cursor: pointer;
 }
 
-header .social a:hover{
+header .social a:hover {
     color: var(--maincolor);
 }
 
-#icon{
+#icon {
     width: 35px;
     height: 35px;
     cursor: pointer;
     margin-top: 2.8rem;
 }
 
-#icon:hover{
+#icon:hover {
     transform: scale(1.2);
 }
 
-header .pallete img{
+header .pallete img {
     opacity: 0;
     height: 5rem;
     width: 2rem;
@@ -244,9 +266,9 @@ header .pallete img{
     cursor: pointer;
 }
 
-#menu{
+#menu {
     position: fixed;
-    top: 2rem; 
+    top: 2rem;
     right: 2rem;
     background: var(--selection);
     color: var(--text);
@@ -257,65 +279,65 @@ header .pallete img{
     display: none;
 }
 
-.home{
+.home {
     display: flex;
     justify-content: center;
     flex-flow: column;
     padding: 0 7rem;
 }
 
-.home h3{
+.home h3 {
     font-size: 8rem;
     color: var(--text);
     animation: fade-up 1.5s 0.3s both;
 }
 
-.home h1{
+.home h1 {
     font-size: 8rem;
-    color:var(--text);
+    color: var(--text);
     margin-bottom: 1.5rem;
     animation: fade-up 1.5s 0.4s both;
 }
 
-.home h1 span{
+.home h1 span {
     color: var(--maincolor);
     font-size: 9rem;
 }
 
-.home h4{
+.home h4 {
     font-size: 3rem;
     color: var(--homeh4);
     animation: fade-up 1.5s 0.55s both;
 }
 
-.home h2{
+.home h2 {
     font-size: 2.5rem;
     color: var(--text2);
-    padding: 4rem 0;  
+    padding: 4rem 0;
     animation-name: hover-up;
     animation-duration: 2.35s;
     animation-iteration-count: infinite;
 }
 
-.home h2 span{
+.home h2 span {
     font-size: 5rem;
     vertical-align: middle;
 }
 
-.about .row{
+.about .row {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
     padding: 1rem 0;
 }
 
-.about .row .infos{
+.about .row .infos {
     padding: 2rem 1rem;
     padding-left: 6rem;
 }
 
-.about .row .infos h3{
+.about .row .infos h3 {
     font-size: 2rem;
     color: var(--text);
     padding: 1rem 0;
@@ -323,31 +345,31 @@ header .pallete img{
     max-width: 98%;
 }
 
-.about .row .infos h3 span{
+.about .row .infos h3 span {
     font-size: 2rem;
     color: var(--maincolor);
     font-weight: normal;
     width: 0;
 }
 
-.about .row .infos h3 span:hover::after{
+.about .row .infos h3 span:hover::after {
     opacity: 100%;
 }
 
-#blinker{
+#blinker {
     font-size: 2rem;
     color: var(--maincolor);
     animation: blinker 1s linear infinite;
 }
 
-.about .row .counter{
+.about .row .counter {
     flex: 1 1 48rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.about .row .counter .explain{
+.about .row .counter .explain {
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
@@ -357,40 +379,40 @@ header .pallete img{
     opacity: 60%;
 }
 
-.skill-bars{
+.skill-bars {
     padding: 25px 30px;
     width: 1000px;
     background: var(--background);
     border-radius: 10px;
 }
 
-.skill-bars .bar{
+.skill-bars .bar {
     margin: 20px 0;
 }
 
-.skill-bars .bar:first-child{
+.skill-bars .bar:first-child {
     margin-top: 0;
 }
 
-.skill-bars .bar .info{
+.skill-bars .bar .info {
     margin-bottom: 20px;
 }
 
-.skill-bars .bar .info span{
+.skill-bars .bar .info span {
     font-weight: 1000;
     font-size: 18px;
     color: var(--text);
     padding: 0;
 }
 
-.skill-bars .bar .info span i{
+.skill-bars .bar .info span i {
     font-weight: 500;
     font-size: 16px;
     color: var(--maincolor);
     padding: 0;
 }
 
-.skill-bars .bar .progress-line{
+.skill-bars .bar .progress-line {
     height: 10px;
     width: 100%;
     background: var(--bars);
@@ -398,35 +420,35 @@ header .pallete img{
     border-radius: 10px;
 }
 
-.bar .progress-line span{
+.bar .progress-line span {
     height: 100%;
     position: absolute;
     border-radius: 10px;
     background: var(--maincolor);
-  
+
 }
 
-.bar .progress-line.html span{
+.bar .progress-line.html span {
     width: 90%;
 }
 
-.bar .progress-line.css span{
+.bar .progress-line.css span {
     width: 85%;
 }
 
-.bar .progress-line.cpp span{
+.bar .progress-line.cpp span {
     width: 45%;
 }
 
-.bar .progress-line.python span{
+.bar .progress-line.python span {
     width: 70%;
 }
 
-.bar .progress-line.javascript span{
+.bar .progress-line.javascript span {
     width: 75%;
 }
 
-.progress-line span::before{
+.progress-line span::before {
     position: absolute;
     content: "";
     top: -20px;
@@ -439,7 +461,7 @@ header .pallete img{
     border-top-color: var(--text);
 }
 
-.progress-line span::after{
+.progress-line span::after {
     position: absolute;
     top: -36px;
     right: 0;
@@ -451,27 +473,27 @@ header .pallete img{
     border-radius: 3px;
 }
 
-.progress-line.html span::after{
+.progress-line.html span::after {
     content: "90%";
 }
 
-.progress-line.css span::after{
+.progress-line.css span::after {
     content: "85%";
 }
 
-.progress-line.cpp span::after{
+.progress-line.cpp span::after {
     content: "45%";
 }
 
-.progress-line.python span::after{
+.progress-line.python span::after {
     content: "70%";
 }
 
-.progress-line.javascript span::after{
+.progress-line.javascript span::after {
     content: "75%";
 }
 
-.projects .box-container{
+.projects .box-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -480,7 +502,7 @@ header .pallete img{
     margin: auto;
 }
 
-.projects .box-container .box{
+.projects .box-container .box {
     height: 26rem;
     width: 26rem;
     border-radius: 1rem;
@@ -489,25 +511,26 @@ header .pallete img{
     cursor: pointer;
 }
 
-.projects .box-container .box.first{
+.projects .box-container .box.first {
     max-width: 40rem;
     max-height: 40rem;
     transition: 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 50%;;
+    opacity: 50%;
+    ;
     background-image: url(../../images/projects/pytetris.png);
     background-position: center;
     background-size: cover;
 }
 
-.projects .box-container .box.first img{
+.projects .box-container .box.first img {
     width: 160px;
     height: 160px;
 }
 
-.projects .box-container .box.second{
+.projects .box-container .box.second {
     max-width: 40rem;
     max-height: 40rem;
     transition: 0.3s;
@@ -520,12 +543,12 @@ header .pallete img{
     background-size: cover;
 }
 
-.projects .box-container .box.second img{
+.projects .box-container .box.second img {
     width: 160px;
     height: 160px;
 }
 
-.projects .box-container .box.third{
+.projects .box-container .box.third {
     max-width: 40rem;
     max-height: 40rem;
     transition: 0.3s;
@@ -538,12 +561,12 @@ header .pallete img{
     background-size: cover;
 }
 
-.projects .box-container .box.third img{
+.projects .box-container .box.third img {
     width: 160px;
     height: 160px;
 }
 
-.projects .box-container .box.fourth{
+.projects .box-container .box.fourth {
     max-width: 40rem;
     max-height: 40rem;
     transition: 0.3s;
@@ -556,12 +579,12 @@ header .pallete img{
     background-size: cover;
 }
 
-.projects .box-container .box.fourth img{
+.projects .box-container .box.fourth img {
     width: 160px;
     height: 160px;
 }
 
-.projects .box-container .box.fifth{
+.projects .box-container .box.fifth {
     max-width: 40rem;
     max-height: 40rem;
     transition: 0.3s;
@@ -574,12 +597,12 @@ header .pallete img{
     background-size: cover;
 }
 
-.projects .box-container .box.fifth img{
+.projects .box-container .box.fifth img {
     width: 160px;
     height: 160px;
 }
 
-.projects .box-container .box.sixth{
+.projects .box-container .box.sixth {
     max-width: 40rem;
     max-height: 40rem;
     transition: 0.3s;
@@ -592,12 +615,12 @@ header .pallete img{
     background-size: cover;
 }
 
-.projects .box-container .box.sixth img{
+.projects .box-container .box.sixth img {
     width: 160px;
     height: 160px;
 }
 
-.projects .box-container .box a{
+.projects .box-container .box a {
     opacity: 0;
     transform: scale(0);
     transition: 0.3s;
@@ -605,27 +628,27 @@ header .pallete img{
     color: #fff;
 }
 
-.projects .box-container .box.first:hover{
+.projects .box-container .box.first:hover {
     opacity: 1;
 }
 
-.projects .box-container .box.second:hover{
+.projects .box-container .box.second:hover {
     opacity: 1;
 }
 
-.projects .box-container .box.third:hover{
+.projects .box-container .box.third:hover {
     opacity: 1;
 }
 
-.projects .box-container .box.fourth:hover{
+.projects .box-container .box.fourth:hover {
     opacity: 1;
 }
 
-.projects .box-container .box.fifth:hover{
+.projects .box-container .box.fifth:hover {
     opacity: 1;
 }
 
-.projects .box-container .box.sixth:hover{
+.projects .box-container .box.sixth:hover {
     opacity: 1;
 }
 
@@ -634,7 +657,7 @@ header .pallete img{
     transform: scale(1);
 }
 
-.experience .box-container{
+.experience .box-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -644,21 +667,21 @@ header .pallete img{
     width: 98%;
 }
 
-.experience .box-container .box{
+.experience .box-container .box {
     width: 100%;
     margin: 4rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid var(--text);
     position: relative;
     box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 
-                100px 100px 80px rgba(0, 0, 0, 0.07);
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-.experience .box-container .box span{
+.experience .box-container .box span {
     font-size: 1.3rem;
     background: var(--experience);
     color: var(--text);
@@ -666,27 +689,27 @@ header .pallete img{
     padding: 0.5rem 2.5rem;
 }
 
-.experience .box-container .box h3{
+.experience .box-container .box h3 {
     font-size: 2rem;
     color: var(--text);
     padding-top: 1.2rem;
-    padding-bottom: 0.3rem; 
+    padding-bottom: 0.3rem;
 }
 
-.experience .box-container .box h3 a{
+.experience .box-container .box h3 a {
     color: var(--maincolor)
 }
 
-.experience .box-container .box ul li{
+.experience .box-container .box ul li {
     margin-left: 1.5rem;
     font-size: 1.4rem;
     color: var(--text2);
     padding: 0.3rem 0;
 }
 
-.experience .box-container .box i{
+.experience .box-container .box i {
     position: absolute;
-    top: -1.5rem; 
+    top: -1.5rem;
     left: -2.5rem;
     height: 5rem;
     width: 5rem;
@@ -698,27 +721,27 @@ header .pallete img{
     background: var(--maincolor);
 }
 
-.contact .row{
+.contact .row {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.contact .row .content{
+.contact .row .content {
     flex: 1 1 30rem;
     padding: 7rem;
     padding-bottom: 1rem;
 }
 
-.contact .row form{
+.contact .row form {
     flex: 1 1 45rem;
     padding: 2rem;
     margin: 2rem;
     margin-bottom: 4rem;
 }
 
-.box{
+.box {
     padding: 1.5rem;
     margin: 1rem 0;
     background: var(--box);
@@ -729,29 +752,29 @@ header .pallete img{
     transition: border-bottom-color 0.4s ease;
     border-bottom: 2px solid transparent;
     box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 
-                100px 100px 80px rgba(0, 0, 0, 0.07);
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-.box:focus{
+.box:focus {
     border-bottom-color: var(--maincolor);
 }
 
-.contact .row form .message{
+.contact .row form .message {
     height: 28rem;
     resize: vertical;
 }
 
-.contact .row .content .title{
+.contact .row .content .title {
     color: var(--maincolor);
     font-size: 3rem;
     font-weight: 1000;
 }
 
-.contact .row .content .info .title{
+.contact .row .content .info .title {
     color: var(--maincolor);
     font-size: 3rem;
     padding-bottom: 1rem;
@@ -759,7 +782,7 @@ header .pallete img{
     font-weight: 1000;
 }
 
-.contact .row .content .info h3{
+.contact .row .content .info h3 {
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -769,12 +792,12 @@ header .pallete img{
     width: 100%;
 }
 
-.contact .row .content .info h3 i{
+.contact .row .content .info h3 i {
     padding-right: 1rem;
     color: var(--maincolor);
 }
 
-.contact .row .content .info a{
+.contact .row .content .info a {
     padding: 0.7rem 2.1rem;
     background: var(--selection);
     color: var(--text);
@@ -786,18 +809,18 @@ header .pallete img{
     text-align: center;
 }
 
-.contact .row .content .info a i{
+.contact .row .content .info a i {
     padding: 2rem 0.5rem;
     font-size: 1.8rem;
 }
 
-.contact .row .content .info a:hover{
+.contact .row .content .info a:hover {
     background: var(--maincolor);
     transform: scale(1.05);
     border: 3px solid var(--text);
 }
 
-.footer{
+.footer {
     margin-top: 1rem;
     font-size: 1.5rem;
     padding: 2.5rem;
@@ -806,28 +829,28 @@ header .pallete img{
     background: var(--background);
 }
 
-.footer span{
+.footer span {
     color: var(--maincolor);
 }
 
-.footer i{
+.footer i {
     color: var(--maincolor);
 }
 
 
 /* SPECIAL CSS*/
-.reveal{
+.reveal {
     position: relative;
     opacity: 0;
 }
 
-.reveal.active{
+.reveal.active {
     animation-name: fade-up;
     animation-duration: 0.6s;
     opacity: 1;
 }
 
-#loader-wrapper{
+#loader-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -837,7 +860,7 @@ header .pallete img{
     overflow: hidden;
 }
 
-#loader-wrapper .loader-section{
+#loader-wrapper .loader-section {
     position: fixed;
     top: 0;
     width: 100%;
@@ -846,8 +869,8 @@ header .pallete img{
     z-index: 10;
 }
 
-#loader{
-    width : 64px;
+#loader {
+    width: 64px;
     height: 64px;
     border-radius: 50%;
     display: inline-block;
@@ -858,18 +881,18 @@ header .pallete img{
     border-right: 4px solid transparent;
     z-index: 1001;
 
-    -webkit-animation: spin 0.575s linear infinite; 
-    animation: spin 0.575s linear infinite; 
+    -webkit-animation: spin 0.575s linear infinite;
+    animation: spin 0.575s linear infinite;
 }
 
-.loaded #loader{
+.loaded #loader {
     opacity: 0;
 
-    -webkit-transition: all 0.6s ease-out; 
+    -webkit-transition: all 0.6s ease-out;
     transition: all 0.6s ease-out;
 }
 
-.loaded #loader-wrapper{
+.loaded #loader-wrapper {
     opacity: 0;
     visibility: hidden;
 
@@ -922,602 +945,602 @@ header .pallete img{
 
 
 
-@media (max-width: 2560px){
-.home{
-    padding: 0 7rem;
-}
-
-.home h1{
-    font-size: 10rem;
-}
-
-.home h3{
-    font-size: 9rem;
-}
-
-.home h4{
-    font-size: 4rem;
-}
-
-.home h2{
-    font-size: 3rem;
-}
-
-.home h2 span{
-    font-size: 5rem;
-}
-
-.about .row .counter .infos h3{
-    width: 100%;
-}
-
-.about .row .skill-bars{
-    width: 90%;
-}
-
-.skill-bars .bar .info{
-    margin-bottom: 3rem;
-}
-
-.skill-bars .bar{
-    margin: 4rem 0;
-}    
-
-.experience .box-container .box{
-    width: 100%;
-}
-
-.projects .box-container .box.first img{
-    width: 230px;
-    height: 230px;
-}
-
-.projects .box-container .box.second img{
-    width: 230px;
-    height: 230px;
-}
-
-.projects .box-container .box.third img{
-    width: 230px;
-    height: 230px;
-}
-
-.projects .box-container .box.fourth img{
-    width: 230px;
-    height: 230px;
-}
-
-.projects .box-container .box.fifth img{
-    width: 230px;
-    height: 230px;
-}
-
-.projects .box-container .box.sixth img{
-    width: 230px;
-    height: 230px;
-}
-
-.projects .box-container .box.first{
-    width: 40rem;
-    height: 32rem;
-}
-
-.projects .box-container .box.second{
-    width: 40rem;
-    height: 32rem;
-}
-
-.projects .box-container .box.third{
-    width: 40rem;
-    height: 32rem;
-}
-
-.projects .box-container .box.fourth{
-    width: 40rem;
-    height: 32rem;
-}
-
-.projects .box-container .box.fifth{
-    width: 40rem;
-    height: 32rem;
-}
-
-.projects .box-container .box.sixth{
-    width: 40rem;
-    height: 32rem;
-}
-}
-
-@media (max-width: 2000px){
-.home h1{
-    font-size: 8rem;
-}
-
-.home h3{
-    font-size: 8rem;
-}
-
-.home h4{
-    font-size: 3rem;
-}
-
-.home h2{
-    font-size: 2.5rem;
-}
-
-.home h2 span{
-    font-size: 5rem;
-}
-
-.about .row .counter .infos h3{
-    width: 98%;
-}
-
-.about .row .skill-bars{
-    width: 90%;
-}
-
-.skill-bars .bar .info{
-    margin-bottom: 20px;
-}
-
-.skill-bars .bar{
-    margin: 4rem 0;
-}    
-
-.experience .box-container .box{
-    width: 100%;
-}
-
-.projects .box-container .box.first img{
-    width: 180px;
-    height: 180px;
-}
-
-.projects .box-container .box.second img{
-    width: 180px;
-    height: 180px;
-}
-
-.projects .box-container .box.third img{
-    width: 180px;
-    height: 180px;
-}
-
-.projects .box-container .box.fourth img{
-    width: 180px;
-    height: 180px;
-}
-
-.projects .box-container .box.fifth img{
-    width: 180px;
-    height: 180px;
-}
-
-.projects .box-container .box.sixth img{
-    width: 180px;
-    height: 180px;
-}
-
-.projects .box-container .box.first{
-    width: 35rem;
-    height: 25rem;
-}
-
-.projects .box-container .box.second{
-    width: 35rem;
-    height: 25rem;
-}
-
-.projects .box-container .box.third{
-    width: 35rem;
-    height: 25rem;
-}
-
-.projects .box-container .box.fourth{
-    width: 35rem;
-    height: 25rem;
-}
-
-.projects .box-container .box.fifth{
-    width: 35rem;
-    height: 25rem;
-}
-
-.projects .box-container .box.sixth{
-    width: 35rem;
-    height: 25rem;
-}
-}
-
-@media (max-width: 1629px){
-.home{
-    padding: 1rem 8rem;
-}
-}
-
-@media (max-width: 1200px){
-html{
-    font-size: 55%;
-}
-
-.projects .box-container .box.first img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.second img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.third img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.fourth img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.fifth img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.sixth img{
-    width: 170px;
-    height: 170px;
-}
-
-.home{
-    padding: 1rem 8rem;
-}
-
-.skill-bars{
-    width: 90%;
-}
-}
-
-@media (max-width: 991px){
-header{
-    left: -120%;
-    width: 100vw;
-}
-
-#menu{
-    display: block;
-}
-
-header.toggle{
-    left: 0%;
-}
-
-body{
-    padding: 0;
-}
-
-.home{ 
-    padding: 13rem;
-}   
-
-.projects .box-container .box.first img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.second img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.third img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.fourth img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.fifth img{
-    width: 170px;
-    height: 170px;
-}
-
-.projects .box-container .box.sixth img{
-    width: 170px;
-    height: 170px;
-}
-
-#menu{
-    font-size: 3rem;
-}
-}
-
-@media (max-width: 768px){
-header{
-    width: 100vw;
-}
-
-header .navbar ul li a{
-    font-size: 3.5rem;
-}
-
-header .social a{
-    font-size: 3rem;
-}
-
-#icon{
-    height: 35px;
-    width: 35px;
-}
-
-.projects .box-container .box.first img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.second img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.third img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.fourth img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.fifth img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.sixth img{
-    width: 150px;
-    height: 150px;
-}
-
-html{
-    font-size: 50%;
-}
-
-.about .row .infos{
-    padding-right: 6rem;
-}
-
-.experience .box-container .box{
-    width: 100%;
-}
-
-.about .skill-bars{
-    width: 85%;
-}
-
-.about .skill-bars{
-    margin-top: 3rem;
-}
-}
-
-@media (max-width: 641px){
-header{
-    width: 100vw;
-}
-
-.home h3{
-    width: 130%;
-}
-
-.skill-bars .bar .info{
-    margin-bottom: 42px;
-}
-
-#menu{
-    font-size: 3rem;
-}
-
-.heading{
-    margin: 0 3rem;
-}
-
-.experience .box-container .box{
-    width: 100%;
-}
-
-.contact .row form{
-    margin: 3rem 0;
-}
-
-header .social a{ 
-    font-size: 3rem;
-}  
-
-header .navbar ul li a{
-    font-size: 3rem;
-}
-}
-
-@media (max-width: 600px){
-header{
-    width: 100vw;
-}
-
-.home h3{
-    width: 130%;
-}
-
-.skill-bars .bar .info{
-    margin-bottom: 42px;
-}
-
-.heading{
-    margin: 0 3rem;
-}
-
-.experience .box-container .box{
-    width: 100%;
-}
-
-.projects .box-container .box.first img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.second img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.third img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.fourth img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.fifth img{
-    width: 150px;
-    height: 150px;
-}
-
-.projects .box-container .box.sixth img{
-    width: 150px;
-    height: 150px;
-}
-
-.contact .row form{
-    margin: 3rem 0;
-}
-
-header .social a{ 
-    font-size: 3rem;
-}  
-
-header .navbar ul li a{
-    font-size: 3rem;
-}
-
-.home{
-    padding: 0 5rem;
-}
-}
-
-@media (max-width: 480px){
-header{
-    width: 100vw;
-}
-
-}
-
-@media (max-width: 440px){
-header{
-    width: 100vw;
-}
-
-.home h3{
-    width: 130%;
-    font-size: 6.8rem;  
-}
-
-.home h2{
-    font-size: 2rem;
-}
-
-.home h1 span{
-    font-size: 7.6rem;
-}
-
-.home{
-    padding: 0rem 5rem;
-}
-
-.home h2{
-    font-size: 3rem;
-}
-
-.home h2 span{
-    font-size: 5rem;
-}
-
-#menu{
-    font-size: 2.8rem;
-}
-
-.skill-bars .bar .info{
-    margin-bottom: 42px;
-}
-
-.heading{
-    margin: 0 3rem;
-}
-
-.experience .box-container .box{
-    width: 100%;
-}
-
-.contact .row form{
-    margin: 3rem 0;
-}
-
-header .navbar ul li a{
-    font-size: 2.7rem;
-}
-
-header .social a{ 
-    font-size: 3rem;
-}    
-
-#icon{
-    width: 30px;
-    height: 30px;
-}
-}
-
-@media (max-width: 360px){
-.home{
-    padding: 0 5.2rem;
-}
-
-.home h3{
-    font-size: 5rem;
-}
-
-.home h1{
-    font-size: 5rem;
-}
-
-.home h1 span{
-    font-size: 6.2rem;
-}
-
-.home h4{
-    font-size: 2.5rem;
-}
-
-.home h2{
-    font-size: 2.5rem;
-}
-
-.home h2 span{
-    font-size: 4rem;
-}
-
-header .social a{ 
-    font-size: 2.5rem;
-}    
-
-#icon{
-    width: 30px;
-    height: 30px;
-}
+@media (max-width: 2560px) {
+    .home {
+        padding: 0 7rem;
+    }
+
+    .home h1 {
+        font-size: 10rem;
+    }
+
+    .home h3 {
+        font-size: 9rem;
+    }
+
+    .home h4 {
+        font-size: 4rem;
+    }
+
+    .home h2 {
+        font-size: 3rem;
+    }
+
+    .home h2 span {
+        font-size: 5rem;
+    }
+
+    .about .row .counter .infos h3 {
+        width: 100%;
+    }
+
+    .about .row .skill-bars {
+        width: 90%;
+    }
+
+    .skill-bars .bar .info {
+        margin-bottom: 3rem;
+    }
+
+    .skill-bars .bar {
+        margin: 4rem 0;
+    }
+
+    .experience .box-container .box {
+        width: 100%;
+    }
+
+    .projects .box-container .box.first img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .projects .box-container .box.second img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .projects .box-container .box.third img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .projects .box-container .box.fourth img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .projects .box-container .box.fifth img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .projects .box-container .box.sixth img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .projects .box-container .box.first {
+        width: 40rem;
+        height: 32rem;
+    }
+
+    .projects .box-container .box.second {
+        width: 40rem;
+        height: 32rem;
+    }
+
+    .projects .box-container .box.third {
+        width: 40rem;
+        height: 32rem;
+    }
+
+    .projects .box-container .box.fourth {
+        width: 40rem;
+        height: 32rem;
+    }
+
+    .projects .box-container .box.fifth {
+        width: 40rem;
+        height: 32rem;
+    }
+
+    .projects .box-container .box.sixth {
+        width: 40rem;
+        height: 32rem;
+    }
+}
+
+@media (max-width: 2000px) {
+    .home h1 {
+        font-size: 8rem;
+    }
+
+    .home h3 {
+        font-size: 8rem;
+    }
+
+    .home h4 {
+        font-size: 3rem;
+    }
+
+    .home h2 {
+        font-size: 2.5rem;
+    }
+
+    .home h2 span {
+        font-size: 5rem;
+    }
+
+    .about .row .counter .infos h3 {
+        width: 98%;
+    }
+
+    .about .row .skill-bars {
+        width: 90%;
+    }
+
+    .skill-bars .bar .info {
+        margin-bottom: 20px;
+    }
+
+    .skill-bars .bar {
+        margin: 4rem 0;
+    }
+
+    .experience .box-container .box {
+        width: 100%;
+    }
+
+    .projects .box-container .box.first img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projects .box-container .box.second img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projects .box-container .box.third img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projects .box-container .box.fourth img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projects .box-container .box.fifth img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projects .box-container .box.sixth img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projects .box-container .box.first {
+        width: 35rem;
+        height: 25rem;
+    }
+
+    .projects .box-container .box.second {
+        width: 35rem;
+        height: 25rem;
+    }
+
+    .projects .box-container .box.third {
+        width: 35rem;
+        height: 25rem;
+    }
+
+    .projects .box-container .box.fourth {
+        width: 35rem;
+        height: 25rem;
+    }
+
+    .projects .box-container .box.fifth {
+        width: 35rem;
+        height: 25rem;
+    }
+
+    .projects .box-container .box.sixth {
+        width: 35rem;
+        height: 25rem;
+    }
+}
+
+@media (max-width: 1629px) {
+    .home {
+        padding: 1rem 8rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .projects .box-container .box.first img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.second img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.third img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.fourth img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.fifth img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.sixth img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .home {
+        padding: 1rem 8rem;
+    }
+
+    .skill-bars {
+        width: 90%;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        left: -120%;
+        width: 100vw;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header.toggle {
+        left: 0%;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .home {
+        padding: 13rem;
+    }
+
+    .projects .box-container .box.first img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.second img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.third img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.fourth img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.fifth img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .projects .box-container .box.sixth img {
+        width: 170px;
+        height: 170px;
+    }
+
+    #menu {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100vw;
+    }
+
+    header .navbar ul li a {
+        font-size: 3.5rem;
+    }
+
+    header .social a {
+        font-size: 3rem;
+    }
+
+    #icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .projects .box-container .box.first img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.second img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.third img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.fourth img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.fifth img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.sixth img {
+        width: 150px;
+        height: 150px;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .about .row .infos {
+        padding-right: 6rem;
+    }
+
+    .experience .box-container .box {
+        width: 100%;
+    }
+
+    .about .skill-bars {
+        width: 85%;
+    }
+
+    .about .skill-bars {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 641px) {
+    header {
+        width: 100vw;
+    }
+
+    .home h3 {
+        width: 130%;
+    }
+
+    .skill-bars .bar .info {
+        margin-bottom: 42px;
+    }
+
+    #menu {
+        font-size: 3rem;
+    }
+
+    .heading {
+        margin: 0 3rem;
+    }
+
+    .experience .box-container .box {
+        width: 100%;
+    }
+
+    .contact .row form {
+        margin: 3rem 0;
+    }
+
+    header .social a {
+        font-size: 3rem;
+    }
+
+    header .navbar ul li a {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        width: 100vw;
+    }
+
+    .home h3 {
+        width: 130%;
+    }
+
+    .skill-bars .bar .info {
+        margin-bottom: 42px;
+    }
+
+    .heading {
+        margin: 0 3rem;
+    }
+
+    .experience .box-container .box {
+        width: 100%;
+    }
+
+    .projects .box-container .box.first img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.second img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.third img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.fourth img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.fifth img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects .box-container .box.sixth img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact .row form {
+        margin: 3rem 0;
+    }
+
+    header .social a {
+        font-size: 3rem;
+    }
+
+    header .navbar ul li a {
+        font-size: 3rem;
+    }
+
+    .home {
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        width: 100vw;
+    }
+
+}
+
+@media (max-width: 440px) {
+    header {
+        width: 100vw;
+    }
+
+    .home h3 {
+        width: 130%;
+        font-size: 6.8rem;
+    }
+
+    .home h2 {
+        font-size: 2rem;
+    }
+
+    .home h1 span {
+        font-size: 7.6rem;
+    }
+
+    .home {
+        padding: 0rem 5rem;
+    }
+
+    .home h2 {
+        font-size: 3rem;
+    }
+
+    .home h2 span {
+        font-size: 5rem;
+    }
+
+    #menu {
+        font-size: 2.8rem;
+    }
+
+    .skill-bars .bar .info {
+        margin-bottom: 42px;
+    }
+
+    .heading {
+        margin: 0 3rem;
+    }
+
+    .experience .box-container .box {
+        width: 100%;
+    }
+
+    .contact .row form {
+        margin: 3rem 0;
+    }
+
+    header .navbar ul li a {
+        font-size: 2.7rem;
+    }
+
+    header .social a {
+        font-size: 3rem;
+    }
+
+    #icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .home {
+        padding: 0 5.2rem;
+    }
+
+    .home h3 {
+        font-size: 5rem;
+    }
+
+    .home h1 {
+        font-size: 5rem;
+    }
+
+    .home h1 span {
+        font-size: 6.2rem;
+    }
+
+    .home h4 {
+        font-size: 2.5rem;
+    }
+
+    .home h2 {
+        font-size: 2.5rem;
+    }
+
+    .home h2 span {
+        font-size: 4rem;
+    }
+
+    header .social a {
+        font-size: 2.5rem;
+    }
+
+    #icon {
+        width: 30px;
+        height: 30px;
+    }
 }

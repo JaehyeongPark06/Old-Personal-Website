@@ -1,6 +1,6 @@
 if (history.scrollRestoration) {
     history.scrollRestoration = 'manual';
-} 
+}
 
 else {
     window.onbeforeunload = function () {
