@@ -196,11 +196,11 @@ section {
     font-size: 4rem;
     padding: 1rem;
     border-bottom: .1rem solid #b4b4b444;
-    color: var(--text);
 }
 
 .heading span {
     color: var(--maincolor);
+    font-weight: bold;
 }
 
 header {
@@ -289,14 +289,14 @@ header .pallete img {
 .home h3 {
     font-size: 8rem;
     color: var(--text);
-    animation: fade-up 0.5s 0.35s both;
+    animation: fade-up 0.5s 0.5s both;
 }
 
 .home h1 {
     font-size: 8rem;
     color: var(--text);
     margin-bottom: 1.5rem;
-    animation: fade-up 0.5s 0.55s both;
+    animation: fade-up 0.5s 0.75s both;
 }
 
 .home h1 span {
@@ -307,7 +307,7 @@ header .pallete img {
 .home h4 {
     font-size: 3rem;
     color: var(--homeh4);
-    animation: fade-up 0.5s 0.85s both;
+    animation: fade-up 0.5s 1.1s both;
 }
 
 .home h2 {
@@ -493,168 +493,127 @@ header .pallete img {
     content: "75%";
 }
 
-.projects .box-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    margin: auto;
+#projects {
+    background: var(--background);
 }
 
-.projects .box-container .box {
-    height: 26rem;
-    width: 26rem;
+.outer {
+    width: 100%;
+    height: auto;
+    color: var(--bars);
+}
+
+.slider-wrapper {
+    width: 99%;
+    margin: none;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0.5rem;
+}
+
+.my-slider {
+    width: 100%;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+#projects .box {
+    height: 200px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 1rem;
-    margin: 2rem;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.projects .box-container .box.first {
-    max-width: 40rem;
-    max-height: 40rem;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 50%;
-    ;
-    background-image: url(../../images/projects/pytetris.png);
-    background-position: center;
-    background-size: cover;
 }
 
-.projects .box-container .box.first img {
-    width: 160px;
-    height: 160px;
+#projects .box:hover {
+    opacity: 100%;
 }
 
-.projects .box-container .box.second {
-    max-width: 40rem;
-    max-height: 40rem;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 50%;
-    background-image: url(../../images/projects/traffic.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.projects .box-container .box.second img {
-    width: 160px;
-    height: 160px;
-}
-
-.projects .box-container .box.third {
-    max-width: 40rem;
-    max-height: 40rem;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 50%;
-    background-image: url(../../images/projects/weather-app.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.projects .box-container .box.third img {
-    width: 160px;
-    height: 160px;
-}
-
-.projects .box-container .box.fourth {
-    max-width: 40rem;
-    max-height: 40rem;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 50%;
-    background-image: url(../../images/projects/discord_bot2.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.projects .box-container .box.fourth img {
-    width: 160px;
-    height: 160px;
-}
-
-.projects .box-container .box.fifth {
-    max-width: 40rem;
-    max-height: 40rem;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 50%;
-    background-image: url(../../images/projects/cursor.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.projects .box-container .box.fifth img {
-    width: 160px;
-    height: 160px;
-}
-
-.projects .box-container .box.sixth {
-    max-width: 40rem;
-    max-height: 40rem;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 50%;
-    background-image: url(../../images/projects/ics_201.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.projects .box-container .box.sixth img {
-    width: 160px;
-    height: 160px;
-}
-
-.projects .box-container .box a {
+#projects .box img {
     opacity: 0;
     transform: scale(0);
     transition: 0.3s;
-    font-size: 2.5rem;
-    color: #fff;
+    width: 10rem;
+    height: 10rem;
 }
 
-.projects .box-container .box.first:hover {
-    opacity: 1;
-}
-
-.projects .box-container .box.second:hover {
-    opacity: 1;
-}
-
-.projects .box-container .box.third:hover {
-    opacity: 1;
-}
-
-.projects .box-container .box.fourth:hover {
-    opacity: 1;
-}
-
-.projects .box-container .box.fifth:hover {
-    opacity: 1;
-}
-
-.projects .box-container .box.sixth:hover {
-    opacity: 1;
-}
-
-.projects .box-container .box:hover a {
+#projects .box:hover img {
     opacity: 1;
     transform: scale(1);
+}
+
+#projects .container .outer .slider-wrapper h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text);
+}
+
+.traffic,
+.edit,
+.weather,
+.auto,
+.tetris,
+.shield {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.traffic {
+    background-image: url("../../images/projects/traffic.png");
+}
+
+.edit {
+    background-image: url("../../images/projects/edit.png");
+}
+
+.weather {
+    background-image: url("../../images/projects/weather-app.png");
+}
+
+.auto {
+    background-image: url("../../images/projects/cursor.png");
+}
+
+.tetris {
+    background-image: url("../../images/projects/pytetris.png");
+}
+
+.shield {
+    background-image: url('../../images/projects/shield.png');
+}
+
+.previous,
+.next {
+    padding: 5px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.01s ease-in-out;
+    border: 3px solid var(--maincolor);
+    background-color: var(--background);
+}
+
+.previous:hover,
+.next:hover {
+    border: 3px solid var(--text);
+}
+
+#project-controls {
+    position: relative;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+#project-controls i {
+    color: var(--text);
+    font-size: 1.5rem;
 }
 
 .experience .box-container {
@@ -668,7 +627,13 @@ header .pallete img {
 }
 
 .experience .box-container .box {
-    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: var(--box);
+    color: var(--text);
+    font-size: 1.7rem;
+    width: 98%;
+    border-bottom: 2.5px solid transparent;
     margin: 4rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid var(--text);
@@ -741,7 +706,7 @@ header .pallete img {
     margin-bottom: 4rem;
 }
 
-.box {
+.contact .box {
     padding: 1.5rem;
     margin: 1rem 0;
     background: var(--box);
@@ -759,7 +724,7 @@ header .pallete img {
         100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-.box:focus {
+.contact .box:focus {
     border-bottom-color: var(--maincolor);
 }
 

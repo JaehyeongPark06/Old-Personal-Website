@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jaehyeong Park personal website">
+  <meta name="description" content="Jaehyeong Park Personal Website">
   <title>Jaehyeong Park</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
   <link rel="icon" href="images/user/favicon-dark-purple.png">
 </head>
 
@@ -143,45 +144,89 @@
 
   <!-- project section starts  -->
 
-  <section class="projects" id="projects">
-
-    <h1 class="heading"><span>Projects</span></h1>
-
-    <div class="box-container reveal">
-
-      <div class="box first">
-        <a href="https://github.com/JaehyeongPark06/Tetris-In-Pygame" target="_blank"><img
-            src="images/projects/view-project-purple.png"></a>
+  <div id="projects">
+    <div class="container">
+      <div class="outer">
+        <div class="slider-wrapper">
+          <div class="heading">
+            <span>Projects</span>
+          </div>
+          <ul class="my-slider">
+            <li>
+              <a href="https://github.com/JaehyeongPark06/Traffic-Stop-Intersection" target="_blank">
+                <div class="box traffic">
+                  <img src="images/projects/view-project-purple.png">
+                </div>
+              </a>
+              <br>
+              <div>
+                <h3>Traffic Intersection</h3>
+              </div>
+            </li>
+            <li>
+              <a href="https://github.com/JaehyeongPark06/Edit-History-Bot" target="_blank">
+                <div class="box edit">
+                  <img src="images/projects/view-project-purple.png">
+                </div>
+              </a>
+              <br>
+              <div>
+                <h3>Discord Edit-History Bot</h3>
+              </div>
+            </li>
+            <li>
+              <a href="https://jaehyeong-weather-app.netlify.app" target="_blank">
+                <div class="box weather">
+                  <img src="images/projects/view-project-purple.png">
+                </div>
+              </a>
+              <br>
+              <div>
+                <h3>Weather App</h3>
+              </div>
+            </li>
+            <li>
+              <a href="https://github.com/JaehyeongPark06/Auto-Clicker" target="_blank">
+                <div class="box auto">
+                  <img src="images/projects/view-project-purple.png">
+                </div>
+              </a>
+              <br>
+              <div>
+                <h3>Auto Clicker</h3>
+              </div>
+            </li>
+            <li>
+              <a href="https://github.com/JaehyeongPark06/Tetris-In-Pygame" target="_blank">
+                <div class="box tetris">
+                  <img src="images/projects/view-project-purple.png">
+                </div>
+              </a>
+              <br>
+              <div>
+                <h3>PyTetris</h3>
+              </div>
+            </li>
+            <li>
+              <a href="https://github.com/JaehyeongPark06/ICS2O1-Summative" target="_blank">
+                <div class="box shield">
+                  <img src="images/projects/view-project-purple.png">
+                </div>
+              </a>
+              <br>
+              <div>
+                <h3>Bomb Shield Game</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="project-controls">
+          <button class="previous"><i class="fas fa-angle-left"></i></button>
+          <button class="next"><i class="fas fa-angle-right"></i></button>
+        </div>
       </div>
-
-      <div class="box second">
-        <a href="https://github.com/JaehyeongPark06/Traffic-Stop-Intersection" target="_blank"><img
-            src="images/projects/view-project-purple.png"></a>
-      </div>
-
-      <div class="box third">
-        <a href="https://jaehyeong-weather-app.netlify.app/" target="_blank"><img
-            src="images/projects/view-project-purple.png"></a>
-      </div>
-
-      <div class="box fourth">
-        <a href="https://github.com/JaehyeongPark06/React-Bot" target="_blank"><img
-            src="images/projects/view-project-purple.png"></a>
-      </div>
-
-      <div class="box fifth">
-        <a href="https://github.com/JaehyeongPark06/Auto-Clicker" target="_blank"><img
-            src="images/projects/view-project-purple.png"></a>
-      </div>
-
-      <div class="box sixth">
-        <a href="https://github.com/JaehyeongPark06/ICS2O1-Summative" target="_blank"><img
-            src="images/projects/view-project-purple.png"></a>
-      </div>
-
     </div>
-
-  </section>
+  </div>
 
   <!-- project section ends -->
 
@@ -264,6 +309,10 @@
   <script src="assets/refresh.js"></script>
   <script src="assets/light.js"></script>
   <script src="assets/scroll.js"></script>
+  <script src="assets/slider.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </body>
 
 
