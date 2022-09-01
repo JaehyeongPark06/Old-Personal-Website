@@ -289,14 +289,14 @@ header .pallete img {
 .home h3 {
     font-size: 8rem;
     color: var(--text);
-    animation: fade-up 0.5s 0.2s both;
+    animation: fade-up 0.5s 0.3s both;
 }
 
 .home h1 {
     font-size: 8rem;
     color: var(--text);
     margin-bottom: 1.5rem;
-    animation: fade-up 0.5s 0.5s both;
+    animation: fade-up 0.5s 0.55s both;
 }
 
 .home h1 span {
@@ -307,7 +307,7 @@ header .pallete img {
 .home h4 {
     font-size: 3rem;
     color: var(--homeh4);
-    animation: fade-up 0.5s 0.7s both;
+    animation: fade-up 0.5s 0.8s both;
 }
 
 .home h2 {
