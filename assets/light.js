@@ -22,18 +22,3 @@ icon.onclick = function () {
     }
 }
 
-function showTheme() {
-    if (localStorage.getItem ("theme") == null) {
-        localStorage.setItem("theme", "light");
-    }
-}
-
-function showContent() {
-    document.body.style.visibility = 'visible';
-    document.body.style.opacity = 1;
-}
-
-window.addEventListener('DOMContentLoaded', function () {
-    showTheme();
-    showContent();
-});
