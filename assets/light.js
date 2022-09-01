@@ -2,7 +2,7 @@
 var icon = document.getElementById("icon");
 
 if (localStorage.getItem("theme") == null) {
-    localStorage.setItem("theme", "dark");  
+    localStorage.setItem("theme", "light");
 }
 
 let localData = localStorage.getItem("theme");
@@ -25,3 +25,19 @@ icon.onclick = function () {
         localStorage.setItem("theme", "dark");
     }
 }
+
+function showTheme() {
+    if (localStorage.getItem ("theme") == null) {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+    showTheme();
+    showContent();
+});
