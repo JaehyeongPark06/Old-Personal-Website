@@ -910,6 +910,9 @@ header .pallete img {
 
 
 
+
+
+
 @media (max-width: 2560px) {
     .home {
         padding: 0 7rem;
@@ -951,68 +954,12 @@ header .pallete img {
         margin: 4rem 0;
     }
 
+    #projects .box {
+        height: 300px;
+    }
+
     .experience .box-container .box {
         width: 100%;
-    }
-
-    .projects .box-container .box.first img {
-        width: 230px;
-        height: 230px;
-    }
-
-    .projects .box-container .box.second img {
-        width: 230px;
-        height: 230px;
-    }
-
-    .projects .box-container .box.third img {
-        width: 230px;
-        height: 230px;
-    }
-
-    .projects .box-container .box.fourth img {
-        width: 230px;
-        height: 230px;
-    }
-
-    .projects .box-container .box.fifth img {
-        width: 230px;
-        height: 230px;
-    }
-
-    .projects .box-container .box.sixth img {
-        width: 230px;
-        height: 230px;
-    }
-
-    .projects .box-container .box.first {
-        width: 40rem;
-        height: 32rem;
-    }
-
-    .projects .box-container .box.second {
-        width: 40rem;
-        height: 32rem;
-    }
-
-    .projects .box-container .box.third {
-        width: 40rem;
-        height: 32rem;
-    }
-
-    .projects .box-container .box.fourth {
-        width: 40rem;
-        height: 32rem;
-    }
-
-    .projects .box-container .box.fifth {
-        width: 40rem;
-        height: 32rem;
-    }
-
-    .projects .box-container .box.sixth {
-        width: 40rem;
-        height: 32rem;
     }
 }
 
@@ -1053,69 +1000,14 @@ header .pallete img {
         margin: 4rem 0;
     }
 
+    #projects .box {
+        height: 200px;
+    }
+
     .experience .box-container .box {
         width: 100%;
     }
 
-    .projects .box-container .box.first img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .projects .box-container .box.second img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .projects .box-container .box.third img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .projects .box-container .box.fourth img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .projects .box-container .box.fifth img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .projects .box-container .box.sixth img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .projects .box-container .box.first {
-        width: 35rem;
-        height: 25rem;
-    }
-
-    .projects .box-container .box.second {
-        width: 35rem;
-        height: 25rem;
-    }
-
-    .projects .box-container .box.third {
-        width: 35rem;
-        height: 25rem;
-    }
-
-    .projects .box-container .box.fourth {
-        width: 35rem;
-        height: 25rem;
-    }
-
-    .projects .box-container .box.fifth {
-        width: 35rem;
-        height: 25rem;
-    }
-
-    .projects .box-container .box.sixth {
-        width: 35rem;
-        height: 25rem;
-    }
 }
 
 @media (max-width: 1629px) {
@@ -1127,36 +1019,6 @@ header .pallete img {
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
-    }
-
-    .projects .box-container .box.first img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.second img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.third img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.fourth img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.fifth img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.sixth img {
-        width: 170px;
-        height: 170px;
     }
 
     .home {
@@ -1190,36 +1052,6 @@ header .pallete img {
         padding: 13rem;
     }
 
-    .projects .box-container .box.first img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.second img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.third img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.fourth img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.fifth img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .projects .box-container .box.sixth img {
-        width: 170px;
-        height: 170px;
-    }
-
     #menu {
         font-size: 3rem;
     }
@@ -1241,36 +1073,6 @@ header .pallete img {
     #icon {
         height: 35px;
         width: 35px;
-    }
-
-    .projects .box-container .box.first img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.second img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.third img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.fourth img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.fifth img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.sixth img {
-        width: 150px;
-        height: 150px;
     }
 
     html {
@@ -1351,36 +1153,6 @@ header .pallete img {
 
     .experience .box-container .box {
         width: 100%;
-    }
-
-    .projects .box-container .box.first img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.second img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.third img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.fourth img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.fifth img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projects .box-container .box.sixth img {
-        width: 150px;
-        height: 150px;
     }
 
     .contact .row form {
