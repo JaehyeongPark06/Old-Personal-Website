@@ -1004,6 +1004,11 @@ header .pallete img {
         height: 240px;
     }
 
+    #projects .box img {
+        width: 15rem;
+        height: 15rem;
+    }
+
     .experience .box-container .box {
         width: 100%;
     }
@@ -1017,6 +1022,11 @@ header .pallete img {
 
     #projects .box {
         height: 200px;
+    }
+
+    #projects .box img {
+        width: 10rem;
+        height: 10rem;
     }
 }
 
