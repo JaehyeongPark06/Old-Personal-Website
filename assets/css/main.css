@@ -441,7 +441,7 @@ header .pallete img {
 }
 
 .bar .progress-line.python span {
-    width: 70%;
+    width: 80%;
 }
 
 .bar .progress-line.javascript span {
@@ -486,7 +486,7 @@ header .pallete img {
 }
 
 .progress-line.python span::after {
-    content: "70%";
+    content: "80%";
 }
 
 .progress-line.javascript span::after {
