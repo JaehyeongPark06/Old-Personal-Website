@@ -955,7 +955,7 @@ header .pallete img {
     }
 
     #projects .box {
-        height: 300px;
+        height: 400px;
     }
 
     .experience .box-container .box {
@@ -1001,7 +1001,7 @@ header .pallete img {
     }
 
     #projects .box {
-        height: 200px;
+        height: 250px;
     }
 
     .experience .box-container .box {
@@ -1013,6 +1013,10 @@ header .pallete img {
 @media (max-width: 1629px) {
     .home {
         padding: 1rem 8rem;
+    }
+
+    #projects .box {
+        height: 200px;
     }
 }
 
