@@ -520,7 +520,7 @@ header .pallete img {
 }
 
 #projects .box {
-    height: 200px;
+    min-height: 200px;
     transition: 0.5s;
     display: flex;
     justify-content: center;
