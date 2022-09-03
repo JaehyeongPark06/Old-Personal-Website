@@ -445,11 +445,11 @@ header .pallete img {
 }
 
 .bar .progress-line.html span {
-    width: 90%;
+    width: 70%;
 }
 
 .bar .progress-line.css span {
-    width: 85%;
+    width: 65%;
 }
 
 .bar .progress-line.cpp span {
@@ -457,11 +457,11 @@ header .pallete img {
 }
 
 .bar .progress-line.python span {
-    width: 80%;
+    width: 60%;
 }
 
 .bar .progress-line.javascript span {
-    width: 75%;
+    width: 55%;
 }
 
 .progress-line span::before {
@@ -490,11 +490,11 @@ header .pallete img {
 }
 
 .progress-line.html span::after {
-    content: "90%";
+    content: "70%";
 }
 
 .progress-line.css span::after {
-    content: "85%";
+    content: "65%";
 }
 
 .progress-line.cpp span::after {
@@ -502,11 +502,11 @@ header .pallete img {
 }
 
 .progress-line.python span::after {
-    content: "80%";
+    content: "60%";
 }
 
 .progress-line.javascript span::after {
-    content: "75%";
+    content: "55%";
 }
 
 #projects {
