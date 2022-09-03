@@ -520,13 +520,14 @@ header .pallete img {
 }
 
 .slider-wrapper {
-    width: 99%;
+    width: 92%;
     margin: none;
     min-height: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 0.5rem;
+    justify-content: center;
+    padding-left: 8%;
 }
 
 .my-slider {
