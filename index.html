@@ -21,7 +21,7 @@
 
 </div>
 
-<body>  
+<body>
   <header>
     <div class="user">
       <div id="splash"><canvas id="logo-canvas"></canvas></div>
@@ -46,7 +46,35 @@
     </div>
 
     <img src="images/light&dark/sun.png" id="icon">
+    <script>
+      // Light and dark mode
+      var icon = document.getElementById("icon");
 
+      if (localStorage.getItem("theme") == null) {
+        localStorage.setItem("theme", "dark");
+      }
+
+      let localData = localStorage.getItem("theme");
+
+      if (localData === "light") {
+        icon.src = "images/light&dark/moon.png";
+        document.body.classList.remove("dark-theme");
+      } else if (localData === "dark") {
+        icon.src = "images/light&dark/sun.png";
+        document.body.classList.toggle("dark-theme");
+      }
+
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "images/light&dark/sun.png";
+          localStorage.setItem("theme", "dark")
+        } else {
+          icon.src = "images/light&dark/moon.png";
+          localStorage.setItem("theme", "light")
+        }
+      }
+    </script>
     <div class="pallete">
       <img src="images/.png">
       <img src="images/.png">
@@ -259,7 +287,7 @@
   </div>
 
   <!-- experience section ends -->
-  
+
   <!-- contact section starts  -->
 
   <section class="contact" id="contact">
