@@ -391,10 +391,9 @@ header .pallete img {
 }
 
 .skill-bars {
-    padding: 25px 30px;
-    width: 1000px;
+    padding-top: 10px;
+    width: 500px;
     background: var(--background);
-    border-radius: 10px;
 }
 
 .skill-bars .bar {
@@ -424,17 +423,15 @@ header .pallete img {
 }
 
 .skill-bars .bar .progress-line {
-    height: 10px;
+    height: 2px;
     width: 100%;
     background: var(--bars);
     position: relative;
-    border-radius: 10px;
 }
 
 .bar .progress-line span {
     height: 100%;
     position: absolute;
-    border-radius: 10px;
     background: var(--maincolor);
 
 }
