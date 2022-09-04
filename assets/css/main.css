@@ -456,51 +456,6 @@ header .pallete img {
     width: 55%;
 }
 
-.progress-line span::before {
-    position: absolute;
-    content: "";
-    top: -20px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: var(--text);
-}
-
-.progress-line span::after {
-    position: absolute;
-    top: -36px;
-    right: 0;
-    font-weight: 1000;
-    background: var(--text);
-    color: var(--background);
-    padding: 1px 8px;
-    font-size: 12px;
-    border-radius: 3px;
-}
-
-.progress-line.html span::after {
-    content: "70%";
-}
-
-.progress-line.css span::after {
-    content: "65%";
-}
-
-.progress-line.cpp span::after {
-    content: "45%";
-}
-
-.progress-line.python span::after {
-    content: "60%";
-}
-
-.progress-line.javascript span::after {
-    content: "55%";
-}
-
 #projects {
     background: var(--background);
 }
