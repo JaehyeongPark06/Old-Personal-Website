@@ -134,12 +134,6 @@
     }
 }
 
-@keyframes skill-animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
-
 
 
 
@@ -969,7 +963,7 @@ header .pallete img {
     }
 
     .skill-bars .bar {
-        margin: 4rem 0;
+        margin: 4.5rem 0;
     }
 
     #projects .box {
