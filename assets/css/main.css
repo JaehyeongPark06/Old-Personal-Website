@@ -134,7 +134,11 @@
     }
 }
 
-
+@keyframes skill-animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
 
 
 
@@ -433,7 +437,6 @@ header .pallete img {
     height: 100%;
     position: absolute;
     background: var(--maincolor);
-
 }
 
 .bar .progress-line.html span {
@@ -627,7 +630,12 @@ header .pallete img {
 }
 
 .experience .box-container .box h3 a {
-    color: var(--maincolor)
+    color: var(--maincolor);
+    border-bottom: 2px solid transparent;
+}
+
+.experience .box-container .box h3 a:hover {
+    border-bottom: 2px solid var(--text);
 }
 
 .experience .box-container .box ul li {
