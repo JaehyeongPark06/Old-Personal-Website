@@ -14,11 +14,10 @@
     --text: #111;
     --bars: #fff;
     --selection: #eee;
-    --background: #f5f5f5;
     --box: #ffffff;
     --homeh4: #cdcdcd;
-    --experience: hsl(0, 0%, 89%);
-    --text2: rgb(30, 30, 30);
+    --experience: #e3e3e3;
+    --text2: #1e1e1e;
 }
 
 .dark-theme {
@@ -27,7 +26,6 @@
     --text: #fff;
     --bars: #fff;
     --selection: #333;
-    --background: #0E1212;
     --box: #3333;
     --homeh4: #777779;
     --experience: #222;
@@ -168,7 +166,7 @@ html {
 body {
     overflow-x: hidden;
     background: var(--background);
-    padding-left: 25rem;
+    padding-left: 15rem;
 }
 
 section {
@@ -223,7 +221,7 @@ header {
     left: 0;
     z-index: 100;
     height: 100%;
-    width: 25rem;
+    width: 15rem;
     background: var(--background);
     display: flex;
     align-items: center;
@@ -242,7 +240,7 @@ header .navbar ul li a {
     padding: 0.3rem;
     margin: 1rem 0;
     color: var(--text);
-    font-size: 2.6rem;
+    font-size: 2rem;
 }
 
 header .navbar ul li a:hover {
@@ -250,11 +248,12 @@ header .navbar ul li a:hover {
 }
 
 header .social a {
-    padding: 0.5rem 0;
-    font-size: 2.3rem;
+    padding: 0.3rem 0;
+    font-size: 1.8rem;
     color: var(--text);
-    margin: 0 0.7rem;
+    margin: 0 0.5rem;
     cursor: pointer;
+    transition: 0.01s;
 }
 
 header .social a:hover {
@@ -262,22 +261,14 @@ header .social a:hover {
 }
 
 #icon {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    margin-top: 2.8rem;
+    margin-top: 2.5rem;
 }
 
 #icon:hover {
     transform: scale(1.2);
-}
-
-header .pallete img {
-    opacity: 0;
-    height: 5rem;
-    width: 2rem;
-    margin: 0 0.7rem;
-    cursor: pointer;
 }
 
 #menu {
@@ -383,6 +374,7 @@ header .pallete img {
     justify-content: center;
     font-size: 1.2rem;
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
     align-items: center;
     color: var(--text);
     opacity: 60%;
@@ -593,7 +585,7 @@ header .pallete img {
     background: var(--box);
     color: var(--text);
     font-size: 1.7rem;
-    width: 98%;
+    width: 100%;
     border-bottom: 2.5px solid transparent;
     margin: 4rem 1rem;
     padding-left: 4rem;
@@ -679,7 +671,7 @@ header .pallete img {
     color: var(--text);
     text-transform: none;
     font-size: 1.7rem;
-    width: 96%;
+    width: 100%;
     transition: border-bottom-color 0.3s ease;
     border-bottom: 2.5px solid transparent;
     box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -909,7 +901,7 @@ header .pallete img {
     }
 
     .about .row .skill-bars {
-        width: 90%;
+        width: 95%;
     }
 
     .skill-bars .bar .info {
@@ -1038,21 +1030,21 @@ header .pallete img {
 }
 
 @media (max-width: 768px) {
-    header {
-        width: 100vw;
-    }
-
     header .navbar ul li a {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
 
     header .social a {
-        font-size: 3rem;
+        font-size: 2.4rem;
+    }
+
+    .home {
+        padding: 0 7rem;
     }
 
     #icon {
-        height: 35px;
-        width: 35px;
+        height: 30px;
+        width: 30px;
     }
 
     html {
@@ -1071,8 +1063,10 @@ header .pallete img {
         width: 85%;
     }
 
-    .about .skill-bars {
-        margin-top: 3rem;
+    .slider-wrapper {
+        gap: 10%;
+        width: 95%;
+        padding-left: 5%;
     }
 }
 
@@ -1083,10 +1077,6 @@ header .pallete img {
 
     .home h3 {
         width: 130%;
-    }
-
-    .skill-bars .bar .info {
-        margin-bottom: 42px;
     }
 
     #menu {
@@ -1123,10 +1113,6 @@ header .pallete img {
         width: 130%;
     }
 
-    .skill-bars .bar .info {
-        margin-bottom: 42px;
-    }
-
     .heading {
         margin: 0 3rem;
     }
@@ -1150,13 +1136,6 @@ header .pallete img {
     .home {
         padding: 0 5rem;
     }
-}
-
-@media (max-width: 480px) {
-    header {
-        width: 100vw;
-    }
-
 }
 
 @media (max-width: 440px) {
@@ -1194,7 +1173,7 @@ header .pallete img {
     }
 
     .skill-bars .bar .info {
-        margin-bottom: 42px;
+        margin-bottom: 24px;
     }
 
     .heading {
@@ -1210,11 +1189,11 @@ header .pallete img {
     }
 
     header .navbar ul li a {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     header .social a {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #icon {
@@ -1252,12 +1231,16 @@ header .pallete img {
         font-size: 4rem;
     }
 
+    header .navbar ul li a {
+        font-size: 2.4rem;
+    }
+
     header .social a {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     #icon {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 }

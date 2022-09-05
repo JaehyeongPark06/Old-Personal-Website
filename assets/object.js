@@ -10,7 +10,7 @@ var canvas = document.getElementById('logo-canvas'),
 function fixdim() {
 	dimensions.update()
 
-	var displaywidth = Math.sqrt(dimensions.width) * 22 //dimensions.width
+	var displaywidth = Math.sqrt(dimensions.width) * 15 //dimensions.width
 
 	var doc = document.documentElement;
 	var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
@@ -19,7 +19,7 @@ function fixdim() {
 	var rect = splash.getBoundingClientRect()
 
 	if (!freeze) {
-		var displayheight = displaywidth * 4.8 / 15 //dimensions.width
+		var displayheight = displaywidth * 4.5 / 15 //dimensions.width
 		canvas.width = displayheight * window.devicePixelRatio
 		canvas.style.width = displayheight + 'px'
 		canvas.height = displayheight * window.devicePixelRatio
