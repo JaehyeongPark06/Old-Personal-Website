@@ -480,10 +480,11 @@ header .social a:hover {
     align-items: center;
     border-radius: 1rem;
     transition: 0.5s;
+    opacity: 50%;
 }
 
 #projects .box:hover {
-    box-shadow: 0 0 0 125px rgba(0, 0, 0, 0.7) inset;
+    opacity: 100%;
 }
 
 #projects .box img {
