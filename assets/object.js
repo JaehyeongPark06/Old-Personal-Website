@@ -10,7 +10,7 @@ var canvas = document.getElementById('logo-canvas'),
 function fixdim() {
 	dimensions.update()
 
-	var displaywidth = Math.sqrt(dimensions.width) * 15 //dimensions.width
+	var displaywidth = Math.sqrt(dimensions.width) * 14.5 //dimensions.width
 
 	var doc = document.documentElement;
 	var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);

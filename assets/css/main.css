@@ -9,7 +9,7 @@
 */
 
 :root {
-    --maincolor: #682BE9;
+    --maincolor: #682be9;
     --background: #f5f5f5;
     --text: #111;
     --bars: #fff;
@@ -62,19 +62,19 @@
     }
 }
 
-@keyframes fade-up {
+@keyframes fade-right {
     0% {
         opacity: 0;
     }
 
     20% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateX(-30px);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
@@ -131,6 +131,15 @@
         opacity: 0;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -214,7 +223,7 @@ section {
     color: var(--maincolor);
     font-weight: bold;
 }
- 
+
 header {
     position: fixed;
     top: 0;
@@ -228,6 +237,7 @@ header {
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    animation: fade-right 0.5s 1.15s both;
 }
 
 header .navbar ul {
@@ -268,7 +278,7 @@ header .social a:hover {
 }
 
 #icon:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 #menu {
@@ -295,6 +305,7 @@ header .social a:hover {
     font-size: 8rem;
     color: var(--text);
     animation: fade-up 0.5s 0.5s both;
+    padding-top: 2.5rem;
 }
 
 .home h1 {
@@ -307,53 +318,20 @@ header .social a:hover {
 .home h4 {
     font-size: 3rem;
     color: var(--homeh4);
-    animation: fade-up 0.5s 1.1s both;
+    animation: fade-up 0.5s 1.15s both;
+    max-width: 100%;
 }
 
 .home h2 {
     font-size: 2.5rem;
     color: var(--text2);
     padding: 4rem 0;
-    animation-name: hover-up;
-    animation-duration: 2.35s;
-    animation-iteration-count: infinite;
+    animation: fade-up 0.5s 1.15s both;
 }
 
 .home h2 span {
     font-size: 5rem;
     vertical-align: middle;
-}
-
-.about .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-}
-
-.about .row .infos {
-    padding: 2rem 1rem;
-    padding-left: 6rem;
-}
-
-.about .row .infos h3 {
-    font-size: 2rem;
-    color: var(--text);
-    padding: 1rem 0;
-    font-weight: normal;
-    max-width: 98%;
-}
-
-.about .row .infos h3 span {
-    font-size: 2rem;
-    color: var(--maincolor);
-    font-weight: normal;
-    width: 0;
-}
-
-.about .row .infos h3 span:hover::after {
-    opacity: 100%;
 }
 
 #blinker {
@@ -362,87 +340,30 @@ header .social a:hover {
     animation: blinker 1s linear infinite;
 }
 
-.about .row .counter {
-    flex: 1 1 48rem;
+.skills-list {
+    padding-top: 3rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-.about .row .counter .explain {
+.skills-list .skills {
+    list-style: none;
     display: flex;
+    flex-flow: wrap;
+    gap: 0.25rem;
     justify-content: center;
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-    align-items: center;
-    color: var(--text);
-    opacity: 60%;
 }
 
-.skill-bars {
-    padding-top: 10px;
-    width: 500px;
+.skills-list .skill {
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid var(--maincolor);
     background: var(--background);
-}
-
-.skill-bars .bar {
-    margin: 20px 0;
-}
-
-.skill-bars .bar:first-child {
-    margin-top: 0;
-}
-
-.skill-bars .bar .info {
-    margin-bottom: 20px;
-}
-
-.skill-bars .bar .info span {
-    font-weight: 1000;
-    font-size: 18px;
     color: var(--text);
-    padding: 0;
-}
-
-.skill-bars .bar .info span i {
+    font-size: 2rem;
     font-weight: 500;
-    font-size: 16px;
-    color: var(--maincolor);
-    padding: 0;
-}
-
-.skill-bars .bar .progress-line {
-    height: 2px;
-    width: 100%;
-    background: var(--bars);
-    position: relative;
-}
-
-.bar .progress-line span {
-    height: 100%;
-    position: absolute;
-    background: var(--maincolor);
-}
-
-.bar .progress-line.html span {
-    width: 70%;
-}
-
-.bar .progress-line.css span {
-    width: 65%;
-}
-
-.bar .progress-line.cpp span {
-    width: 45%;
-}
-
-.bar .progress-line.python span {
-    width: 60%;
-}
-
-.bar .progress-line.javascript span {
-    width: 55%;
+    margin-right: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 #projects {
@@ -469,7 +390,7 @@ header .social a:hover {
 .my-slider {
     width: 100%;
     margin: 0;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 #projects .box {
@@ -506,7 +427,19 @@ header .social a:hover {
     color: var(--text);
 }
 
-.traffic,
+#projects .container .outer .slider-wrapper h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#projects .container .outer .slider-wrapper h2 i {
+    font-size: 2.5rem;
+    color: var(--maincolor);
+    margin-right: 0.5rem;
+}
+
+.website,
 .edit,
 .weather,
 .auto,
@@ -517,8 +450,8 @@ header .social a:hover {
     background-repeat: no-repeat;
 }
 
-.traffic {
-    background-image: url("../../images/projects/traffic.png");
+.website {
+    background-image: url("../../images/projects/website.png");
 }
 
 .edit {
@@ -620,7 +553,7 @@ header .social a:hover {
     border-bottom: 2px solid transparent;
 }
 
-.experience .box-container .box h3 a:hover {
+.experience .box-container .box a:hover {
     border-bottom: 2px solid var(--text);
 }
 
@@ -887,6 +820,7 @@ header .social a:hover {
 
     .home h4 {
         font-size: 4rem;
+        width: 70%;
     }
 
     .home h2 {
@@ -895,22 +829,6 @@ header .social a:hover {
 
     .home h2 span {
         font-size: 5rem;
-    }
-
-    .about .row .counter .infos h3 {
-        width: 100%;
-    }
-
-    .about .row .skill-bars {
-        width: 95%;
-    }
-
-    .skill-bars .bar .info {
-        margin-bottom: 3rem;
-    }
-
-    .skill-bars .bar {
-        margin: 4rem 0;
     }
 
     #projects .box {
@@ -941,22 +859,6 @@ header .social a:hover {
 
     .home h2 span {
         font-size: 5rem;
-    }
-
-    .about .row .counter .infos h3 {
-        width: 98%;
-    }
-
-    .about .row .skill-bars {
-        width: 90%;
-    }
-
-    .skill-bars .bar .info {
-        margin-bottom: 20px;
-    }
-
-    .skill-bars .bar {
-        margin: 4.5rem 0;
     }
 
     #projects .box {
@@ -996,10 +898,6 @@ header .social a:hover {
 
     .home {
         padding: 1rem 8rem;
-    }
-
-    .skill-bars {
-        width: 90%;
     }
 }
 
@@ -1052,16 +950,8 @@ header .social a:hover {
         font-size: 50%;
     }
 
-    .about .row .infos {
-        padding-right: 6rem;
-    }
-
     .experience .box-container .box {
         width: 100%;
-    }
-
-    .about .skill-bars {
-        width: 85%;
     }
 
     .slider-wrapper {
@@ -1112,6 +1002,10 @@ header .social a:hover {
 
     .home h3 {
         width: 130%;
+    }
+
+    .home h4 {
+        width: 90%;
     }
 
     .heading {
@@ -1171,10 +1065,6 @@ header .social a:hover {
 
     #menu {
         font-size: 2.8rem;
-    }
-
-    .skill-bars .bar .info {
-        margin-bottom: 24px;
     }
 
     .heading {
