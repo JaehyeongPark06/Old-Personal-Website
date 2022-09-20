@@ -9,7 +9,7 @@
 */
 
 :root {
-    --maincolor: #682be9;
+    --maincolor: rgb(104, 43, 233);
     --background: #f5f5f5;
     --text: #111;
     --bars: #fff;
@@ -109,6 +109,34 @@
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes reverse-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
 }
 
@@ -237,7 +265,7 @@ header {
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    animation: fade-right 0.5s 1.15s both;
+    animation: fade-right 0.5s 1.35s both;
 }
 
 header .navbar ul {
@@ -304,7 +332,7 @@ header .social a:hover {
 .home h3 {
     font-size: 8rem;
     color: var(--text);
-    animation: fade-up 0.5s 0.5s both;
+    animation: fade-up 0.5s 0.65s both;
     padding-top: 2.5rem;
 }
 
@@ -312,13 +340,13 @@ header .social a:hover {
     color: var(--maincolor);
     font-size: 9rem;
     margin-bottom: 1.5rem;
-    animation: fade-up 0.5s 0.75s both;
+    animation: fade-up 0.5s 0.95s both;
 }
 
 .home h4 {
     font-size: 3rem;
     color: var(--homeh4);
-    animation: fade-up 0.5s 1.15s both;
+    animation: fade-up 0.5s 1.35s both;
     max-width: 100%;
 }
 
@@ -326,7 +354,7 @@ header .social a:hover {
     font-size: 2.5rem;
     color: var(--text2);
     padding: 4rem 0;
-    animation: fade-up 0.5s 1.15s both;
+    animation: fade-up 0.5s 1.35s both;
 }
 
 .home h2 span {
@@ -338,32 +366,6 @@ header .social a:hover {
     font-size: 2rem;
     color: var(--maincolor);
     animation: blinker 1s linear infinite;
-}
-
-.skills-list {
-    padding-top: 3rem;
-    display: flex;
-    justify-content: center;
-}
-
-.skills-list .skills {
-    list-style: none;
-    display: flex;
-    flex-flow: wrap;
-    gap: 0.25rem;
-    justify-content: center;
-}
-
-.skills-list .skill {
-    padding: 0.6rem 1.2rem;
-    border-radius: 2rem;
-    border: 2px solid var(--maincolor);
-    background: var(--background);
-    color: var(--text);
-    font-size: 2rem;
-    font-weight: 500;
-    margin-right: 1rem;
-    margin-bottom: 0.8rem;
 }
 
 #projects {
@@ -501,6 +503,36 @@ header .social a:hover {
 #project-controls i {
     color: var(--text);
     font-size: 2rem;
+}
+
+.skills-list {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-list .skills {
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+    gap: 0.25rem;
+    justify-content: center;
+}
+
+.skills-list .skill {
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid var(--maincolor);
+    background: var(--background);
+    color: var(--text);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-right: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.skills-list .skill:hover {
+    background-color: rgb(104, 43, 233, 0.25);
 }
 
 .experience .box-container {
@@ -727,19 +759,54 @@ header .social a:hover {
 }
 
 #loader {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    display: inline-block;
+    display: block;
     position: relative;
-    top: 45%;
-    left: calc(50% - 32px);
-    border-top: 4px solid var(--text);
-    border-right: 4px solid transparent;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--maincolor);
     z-index: 1001;
 
-    -webkit-animation: spin 0.575s linear infinite;
-    animation: spin 0.575s linear infinite;
+    -webkit-animation: spin 1.7s linear infinite;
+    animation: spin 1.7s linear infinite;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--text);
+
+    -webkit-animation: reverse-spin 0.6s linear infinite;
+    /* Chrome, Opera 15+, Safari 5+ */
+    animation: reverse-spin 0.6s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--maincolor);
+
+    -webkit-animation: spin 1s linear infinite;
+    /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1s linear infinite;
+    /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
 .loaded #loader {
