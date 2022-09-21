@@ -15,7 +15,6 @@
     --bars: #fff;
     --selection: #eee;
     --box: #ffffff;
-    --homeh4: #cdcdcd;
     --experience: #e3e3e3;
     --text2: #1e1e1e;
 }
@@ -27,7 +26,6 @@
     --bars: #fff;
     --selection: #333;
     --box: #3333;
-    --homeh4: #777779;
     --experience: #222;
     --text2: #eee;
 }
@@ -332,7 +330,7 @@ header .social a:hover {
 
 .home h4 {
     font-size: 3rem;
-    color: var(--homeh4);
+    color: var(--text);
     animation: fade-up 0.5s 1.35s both;
     max-width: 100%;
 }
@@ -755,7 +753,7 @@ header .social a:hover {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: var(--maincolor);
+    border-top-color: var(--text);
     z-index: 1001;
 
     -webkit-animation: spin 1.7s linear infinite;
@@ -771,7 +769,7 @@ header .social a:hover {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: var(--text);
+    border-top-color: var(--maincolor);
 
     -webkit-animation: reverse-spin 0.6s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
@@ -788,7 +786,7 @@ header .social a:hover {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: var(--maincolor);
+    border-top-color: var(--text);
 
     -webkit-animation: spin 1s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
