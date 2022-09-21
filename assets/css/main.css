@@ -1187,7 +1187,7 @@ header .social a:hover {
         cursor: pointer;
         display: block;
         position: fixed;
-        right: 15px;
+        right: 23px;
         top: 20px;
         height: 23px;
         width: 27px;
@@ -1201,7 +1201,7 @@ header .social a:hover {
         left: 1px;
         top: 45%;
         height: 2px;
-        width: 20px;
+        width: 30px;
         -webkit-transition: 0.4s;
         transition: 0.4s;
     }
@@ -1211,9 +1211,9 @@ header .social a:hover {
         content: '';
         position: absolute;
         left: 0;
-        top: -8px;
+        top: -12px;
         height: 2px;
-        width: 20px;
+        width: 30px;
         /*     -webkit-transition: top 0.2s ease 0.3s;
       transition: top 0.2s ease 0.3s; */
         -webkit-transition: 0.3s width 0.4s;
@@ -1226,9 +1226,9 @@ header .social a:hover {
         content: '';
         position: absolute;
         left: 0;
-        bottom: -8px;
+        bottom: -12px;
         height: 2px;
-        width: 20px;
+        width: 30px;
         /*     -webkit-transition: top 0.2s ease 0.3s;
       transition: top 0.2s ease 0.3s; */
         -webkit-transition: 0.3s width 0.4s;
@@ -1238,7 +1238,7 @@ header .social a:hover {
     /* Bars Shadows */
     .icon-bars.overlay {
         background: var(--maincolor);
-        width: 20px;
+        width: 40px;
         animation: middleBar 3s infinite 0.5s;
         -webkit-animation: middleBar 3s infinite 0.5s;
     }
@@ -1273,7 +1273,7 @@ header .social a:hover {
 
     .icon-bars.overlay::before {
         background: var(--maincolor);
-        width: 10px;
+        width: 15px;
         animation: topBar 3s infinite 0.2s;
         -webkit-animation: topBar 3s infinite 0s;
     }
@@ -1308,7 +1308,7 @@ header .social a:hover {
 
     .icon-bars.overlay::after {
         background: var(--maincolor);
-        width: 15px;
+        width: 20px;
         animation: bottomBar 3s infinite 1s;
         -webkit-animation: bottomBar 3s infinite 1s;
     }
@@ -1473,10 +1473,6 @@ header .social a:hover {
 
     .home h2 span {
         font-size: 5rem;
-    }
-
-    #menu {
-        font-size: 2.8rem;
     }
 
     .heading {
