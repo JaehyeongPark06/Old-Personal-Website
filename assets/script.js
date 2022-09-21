@@ -1,25 +1,46 @@
-// menu for mobile or smaller screens
-$(document).ready(function () {
+let menuIcon = document.querySelector('.menuIcon');
+let nav = document.querySelector('.overlay-menu');
 
-  $('#menu').click(function () {
+menuIcon.addEventListener('click', () => {
+  if (nav.style.transform != 'translateX(0%)') {
+    nav.style.transform = 'translateX(0%)';
+    nav.style.transition = 'transform 0.2s ease-out';
+  } else {
+    nav.style.transform = 'translateX(-100%)';
+    nav.style.transition = 'transform 0.2s ease-out';
+  }
+});
+
+
+// Toggle Menu Icon ========================================
+let toggleIcon = document.querySelector('.menuIcon');
+
+toggleIcon.addEventListener('click', () => {
+  if (toggleIcon.className != 'menuIcon toggle') {
+    toggleIcon.className += ' toggle';
     $(this).toggleClass('fa-times');
     $('header').toggleClass('toggle');
-  });
+  } else {
+    $(this).toggleClass('fa-times');
+    $('header').toggleClass('toggle');
+    toggleIcon.className = 'menuIcon';
+  }
+});
 
-  $(window).on('scroll load', function () {
+$(window).on('scroll load', function () {
 
-    $('#menu').removeClass('fa-times');
-    $('header').removeClass('toggle');
+  $('menuIcon').removeClass('fa-times');
+  $('header').removeClass('toggle');
+  toggleIcon.className = 'menuIcon';
 
-    if ($(window).scrollTop() > 0) {
-      $('.top').show();
-    }
+  if ($(window).scrollTop() > 0) {
+    $('.top').show();
+  }
 
-    else {
-      $('.top').hide();
-    }
+  else {
+    $('.top').hide();
+  }
 
-  });
 });
 
 // smooth scroll
