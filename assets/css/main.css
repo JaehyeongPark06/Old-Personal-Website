@@ -1238,7 +1238,7 @@ header .social a:hover {
     /* Bars Shadows */
     .icon-bars.overlay {
         background: var(--maincolor);
-        width: 40px;
+        width: 0px;
         animation: middleBar 3s infinite 0.5s;
         -webkit-animation: middleBar 3s infinite 0.5s;
     }
@@ -1273,7 +1273,7 @@ header .social a:hover {
 
     .icon-bars.overlay::before {
         background: var(--maincolor);
-        width: 15px;
+        width: 0px;
         animation: topBar 3s infinite 0.2s;
         -webkit-animation: topBar 3s infinite 0s;
     }
@@ -1308,7 +1308,7 @@ header .social a:hover {
 
     .icon-bars.overlay::after {
         background: var(--maincolor);
-        width: 20px;
+        width: 0px;
         animation: bottomBar 3s infinite 1s;
         -webkit-animation: bottomBar 3s infinite 1s;
     }
