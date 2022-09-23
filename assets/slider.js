@@ -25,7 +25,6 @@ let projects_slider = tns({
         },
         810: {
             items: 2,
-            gutter: 20
         },
         768: {
             items: 2

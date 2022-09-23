@@ -9,7 +9,7 @@
 */
 
 :root {
-    --maincolor: #00D7B3;
+    --maincolor: #00d7b3;
     --background: #f5f5f5;
     --text: #111;
     --bars: #fff;
@@ -517,7 +517,7 @@ header .social a:hover {
 }
 
 .skills-list .skill:hover {
-    background-color: rgb(104, 43, 233, 0.25);
+    background-color: rgb(0, 215, 179, 0.2);
 }
 
 .experience .box-container {
@@ -532,6 +532,7 @@ header .social a:hover {
 
 .experience .box-container .box {
     padding: 1.5rem;
+    border-radius: 1rem;
     margin: 1rem 0;
     background: var(--box);
     color: var(--text);
@@ -554,7 +555,7 @@ header .social a:hover {
     font-size: 1.3rem;
     background: var(--experience);
     color: var(--text);
-    border-radius: 5rem;
+    border-radius: 1rem;
     padding: 0.5rem 2.5rem;
 }
 
@@ -621,6 +622,7 @@ header .social a:hover {
     background: var(--box);
     color: var(--text);
     text-transform: none;
+    border-radius: 1rem;    
     font-size: 1.7rem;
     width: 100%;
     transition: border-bottom-color 0.3s ease;
@@ -677,7 +679,7 @@ header .social a:hover {
     color: var(--text);
     cursor: pointer;
     font-size: 1.8rem;
-    border-radius: 5rem;
+    border-radius: 1rem;
     border: 3px solid var(--maincolor);
     width: 37%;
     text-align: center;
@@ -955,7 +957,7 @@ header .social a:hover {
 
 @media (max-width: 991px) {
     body {
-        padding-left: 13rem;
+        padding-left: 15rem;
     }
 }
 
