@@ -9,7 +9,7 @@
 */
 
 :root {
-    --maincolor: rgb(104, 43, 233);
+    --maincolor: #00D7B3;
     --background: #f5f5f5;
     --text: #111;
     --bars: #fff;
@@ -20,7 +20,7 @@
 }
 
 .dark-theme {
-    --maincolor: #682BE9;
+    --maincolor: #00D7B3;
     --background: #0E1212;
     --text: #fff;
     --bars: #fff;
@@ -263,7 +263,7 @@ header {
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    animation: fade-right 0.5s 1.35s both;
+    animation: fade-right 0.5s 1.45s both;
 }
 
 header .navbar ul {
@@ -331,7 +331,7 @@ header .social a:hover {
 .home h4 {
     font-size: 3rem;
     color: var(--text);
-    animation: fade-up 0.5s 1.35s both;
+    animation: fade-up 0.5s 1.45s both;
     max-width: 100%;
 }
 
@@ -339,7 +339,7 @@ header .social a:hover {
     font-size: 2.5rem;
     color: var(--text2);
     padding: 4rem 0;
-    animation: fade-up 0.5s 1.35s both;
+    animation: fade-up 0.5s 1.45s both;
 }
 
 .home h2 span {

@@ -2,7 +2,7 @@
 var canvas = document.getElementById('logo-canvas'),
 	ctx = canvas.getContext('2d'),
 	splash = document.getElementById('splash'),
-	color = "#682BE9",
+	color = "#00D7B3",
 	lasttime,
 	freeze
 
