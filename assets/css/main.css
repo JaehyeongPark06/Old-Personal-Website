@@ -532,7 +532,6 @@ header .social a:hover {
 
 .experience .box-container .box {
     padding: 1.5rem;
-    border-radius: 1rem;
     margin: 1rem 0;
     background: var(--box);
     color: var(--text);
@@ -622,7 +621,6 @@ header .social a:hover {
     background: var(--box);
     color: var(--text);
     text-transform: none;
-    border-radius: 1rem;
     font-size: 1.7rem;
     width: 100%;
     transition: border-bottom-color 0.3s ease;
