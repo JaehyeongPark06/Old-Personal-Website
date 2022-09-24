@@ -386,7 +386,7 @@ header .social a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     transition: 0.5s;
     opacity: 50%;
 }
