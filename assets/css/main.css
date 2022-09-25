@@ -15,7 +15,6 @@
     --bars: #fff;
     --selection: #eee;
     --box: #ffffff;
-    --experience: #e3e3e3;
     --text2: #1e1e1e;
 }
 
@@ -26,7 +25,6 @@
     --bars: #fff;
     --selection: #333;
     --box: #3333;
-    --experience: #222;
     --text2: #eee;
 }
 
@@ -524,81 +522,6 @@ header .social a:hover {
     background-color: rgb(0, 215, 179, 0.2);
 }
 
-.experience .box-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-    padding-left: 3rem;
-    width: 98%;
-}
-
-.experience .box-container .box {
-    padding: 1.5rem;
-    margin: 1rem 0;
-    background: var(--box);
-    color: var(--text);
-    font-size: 1.7rem;
-    width: 100%;
-    border-bottom: 2.5px solid transparent;
-    margin: 4rem 1rem;
-    padding-left: 4rem;
-    border-left: .2rem solid var(--text);
-    position: relative;
-    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        100px 100px 80px rgba(0, 0, 0, 0.07);
-}
-
-.experience .box-container .box span {
-    font-size: 1.3rem;
-    background: var(--experience);
-    color: var(--text);
-    border-radius: 1rem;
-    padding: 0.5rem 2.5rem;
-}
-
-.experience .box-container .box h3 {
-    font-size: 2rem;
-    color: var(--text);
-    padding-top: 1.2rem;
-    padding-bottom: 0.3rem;
-}
-
-.experience .box-container .box h3 a {
-    color: var(--maincolor);
-    border-bottom: 2px solid transparent;
-}
-
-.experience .box-container .box a:hover {
-    border-bottom: 2px solid var(--text);
-}
-
-.experience .box-container .box ul li {
-    margin-left: 1.5rem;
-    font-size: 1.4rem;
-    color: var(--text2);
-    padding: 0.3rem 0;
-}
-
-.experience .box-container .box i {
-    position: absolute;
-    top: -1.5rem;
-    left: -2.5rem;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    color: var(--bars);
-    background: var(--maincolor);
-}
-
 .contact .row {
     display: flex;
     align-items: center;
@@ -889,10 +812,6 @@ header .social a:hover {
     #projects .box {
         height: 400px;
     }
-
-    .experience .box-container .box {
-        width: 100%;
-    }
 }
 
 @media (max-width: 2000px) {
@@ -924,11 +843,6 @@ header .social a:hover {
         width: 12rem;
         height: 12rem;
     }
-
-    .experience .box-container .box {
-        width: 100%;
-    }
-
 }
 
 @media (max-width: 1629px) {
@@ -982,10 +896,6 @@ header .social a:hover {
 
     html {
         font-size: 50%;
-    }
-
-    .experience .box-container .box {
-        width: 100%;
     }
 
     .slider-wrapper {
@@ -1384,10 +1294,6 @@ header .social a:hover {
         margin: 0 3rem;
     }
 
-    .experience .box-container .box {
-        width: 100%;
-    }
-
     .contact .row form {
         margin: 3rem 0;
     }
@@ -1425,10 +1331,6 @@ header .social a:hover {
 
     .heading {
         margin: 0 3rem;
-    }
-
-    .experience .box-container .box {
-        width: 100%;
     }
 
     .contact .row form {
@@ -1480,10 +1382,6 @@ header .social a:hover {
 
     .heading {
         margin: 0 3rem;
-    }
-
-    .experience .box-container .box {
-        width: 100%;
     }
 
     .contact .row form {
