@@ -381,7 +381,7 @@ header .social a:hover {
 }
 
 #projects .box {
-    min-height: 200px;
+    max-height: 200px;
     transition: 0.5s;
     display: flex;
     justify-content: center;
