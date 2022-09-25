@@ -1355,6 +1355,11 @@ header .social a:hover {
         width: 100vw;
     }
 
+    .home {
+        margin: 0 0 auto;
+        padding: 0;
+    }
+
     .home h3 {
         width: 130%;
         font-size: 6.8rem;
